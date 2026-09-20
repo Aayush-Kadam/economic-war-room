@@ -75,7 +75,7 @@ def benchmark():
 def main():
  rep,rows=replay();irf=irfs();rob=robustness();tour=tournament();front=frontier();perf=benchmark()
  table_rows="\n".join(f"| {k} | {v['total_loss']:.2f} | {v['inflation_loss']:.2f} | {v['output_loss']:.2f} | {v['mean_rate']:.2f}% |" for k,v in tour.items())
- (REPORTS/"HISTORICAL_REPLAY_VALIDATION.md").write_text(f"""# Historical replay validation
+ (REPORTS/"LEGACY_MEETING_REPLAY.md").write_text(f"""# Legacy meeting replay
 
 ## Verdict: NEEDS REVISION
 
@@ -91,7 +91,7 @@ The replay uses six next-meeting inflation observations from the 2022 decision s
 
 The model does not beat the persistence baseline in this short evaluation. Error is dominated by an abrupt supply-driven inflation turn and the use of one-step meeting-to-meeting transitions in a quarterly model. Inflation dynamics therefore remain a material weakness.
 """,encoding="utf-8")
- (REPORTS/"ROBUSTNESS_AND_IRF_REPORT.md").write_text(f"""# Robustness and impulse-response report
+ (REPORTS/"LEGACY_STEP_RESPONSE_REPORT.md").write_text(f"""# Legacy robustness and step-response report
 
 ## Verdict: PASS WITH LIMITATIONS
 

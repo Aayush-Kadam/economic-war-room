@@ -6,28 +6,28 @@
     "mean_rate": 2.375
   },
   "taylor": {
-    "total_loss": 93.1293689466611,
-    "inflation_loss": 21.122405505486206,
-    "output_loss": 57.71253026369642,
-    "mean_rate": 10.0
+    "total_loss": 3.9189242729880975,
+    "inflation_loss": 0.779264839728697,
+    "output_loss": 2.421438454848425,
+    "mean_rate": 3.0723776954130924
   },
   "inflation_focused": {
-    "total_loss": 93.1293689466611,
-    "inflation_loss": 21.122405505486206,
-    "output_loss": 57.71253026369642,
-    "mean_rate": 10.0
+    "total_loss": 5.596306354859454,
+    "inflation_loss": 1.0890800837224281,
+    "output_loss": 3.510071972502411,
+    "mean_rate": 3.433463474473439
   },
   "dual_mandate": {
-    "total_loss": 93.1293689466611,
-    "inflation_loss": 21.122405505486206,
-    "output_loss": 57.71253026369642,
-    "mean_rate": 10.0
+    "total_loss": 2.5632085106815223,
+    "inflation_loss": 0.5881681380859685,
+    "output_loss": 1.4803885730555153,
+    "mean_rate": 2.579771606543212
   },
   "smoothing": {
-    "total_loss": 31.387581150684625,
-    "inflation_loss": 6.596629542210483,
-    "output_loss": 19.77159203974312,
-    "mean_rate": 6.332780020577567
+    "total_loss": 2.645372731712415,
+    "inflation_loss": 0.8586515339372232,
+    "output_loss": 1.3894331155824937,
+    "mean_rate": 1.9111750983083167
   },
   "hold": {
     "total_loss": 9.382020968168504,
