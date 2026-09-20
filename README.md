@@ -29,9 +29,13 @@ Private release: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
 - ALFRED vintage adapter and anti-lookahead filter;
 - reproducibility, directional economics and numerical stability tests;
 - responsive briefing-room, results and methodology interfaces.
+- frozen 1990Q1–2019Q4 estimation dataset with checksums and ten-series provenance;
+- equation-level estimates, parameter registry, historical replay and robustness reports;
+- Student-t shocks, parameter uncertainty, seven policy benchmarks and a 2,000-path frontier;
+- country-specific experimental Fed-crisis and RBI extensions.
 
 ## Scientific position
 
-This is a calibrated semi-structural counterfactual simulation—not a structural causal estimate and not a forecast service. Its coefficients are literature-informed provisional calibrations. It can demonstrate mechanisms and trade-offs; it cannot establish what would definitely have happened under another policy path.
+This is a calibrated semi-structural counterfactual simulation—not a structural causal estimate and not a forecast service. Some coefficients are estimated on a frozen pre-pandemic sample; weakly identified policy and credibility mechanisms remain literature-informed or designed. The historical replay currently underperforms persistence, so quantitative paths remain illustrative.
 
 See [MODEL_SPECIFICATION.md](MODEL_SPECIFICATION.md), [METHODOLOGY.md](METHODOLOGY.md), [DATA_SOURCES.md](DATA_SOURCES.md), [LIMITATIONS.md](LIMITATIONS.md), and [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
