@@ -1,0 +1,20 @@
+{
+  "version": "0.9.0-research-preview",
+  "clock": "monthly",
+  "inflation": {
+    "definition": "100 times monthly log price change",
+    "reported": "sum of latest 12 monthly log changes",
+    "intercept": 0.1071143390975551,
+    "lag_coefficients": [0.4334097710239854, -0.09105496279388843, 0.013393030450348233, 0.06950907230386826, -0.09555493481133799, 0.05022384120795375, -0.05482172179265643, -0.03749525377153674, 0.09294970209443121, -0.03321409925655559, 0.1414690049540852, -0.1819319577158614],
+    "monthly_shock_sigma": 0.09
+  },
+  "transmission": {
+    "months": 48,
+    "output": {"peak_month": 18, "magnitude_per_100bp": -0.60},
+    "inflation": {"peak_month": 24, "magnitude_per_100bp": -0.30},
+    "unemployment": {"peak_month": 22, "magnitude_per_100bp": 0.20},
+    "financial_conditions": {"peak_month": 6, "magnitude_per_100bp": 0.30}
+  },
+  "state": {"output_persistence": 0.97, "unemployment_persistence": 0.96, "stress_persistence": 0.90},
+  "bounds": {"unemployment": [2.5, 12.0], "stress": [0.0, 2.0], "credibility": [0.2, 1.0]}
+}

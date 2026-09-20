@@ -1,5 +1,7 @@
 import test from "node:test";import assert from "node:assert/strict";import fs from "node:fs";
 const page=fs.readFileSync(new URL("../app/page.tsx",import.meta.url),"utf8");
+const engine=fs.readFileSync(new URL("../lib/unified-engine.ts",import.meta.url),"utf8");
 test("counterfactual disclaimer is visible",()=>assert.match(page,/model-generated counterfactuals/i));
 test("interface exposes seven historical decisions",()=>assert.equal((page.match(/date:"2022-/g)||[]).length,7));
-test("seeded simulation uses 1000 paths",()=>assert.match(page,/paths=1000/));
+test("seeded simulation uses 1000 paths",()=>assert.match(engine,/paths=1000/));
+test("browser uses the shared monthly specification",()=>{assert.match(page,/simulateUnified/);assert.match(engine,/unified_spec\.json/)});
