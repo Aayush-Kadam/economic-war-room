@@ -1,0 +1,172 @@
+{
+  "title": "Economic War Room frozen U.S. estimation sample",
+  "retrieved_at_utc": "2026-09-20T14:42:35.185289+00:00",
+  "observation_range": [
+    "1990-01-01",
+    "2019-12-31"
+  ],
+  "estimation_sample": [
+    "1991Q2",
+    "2019Q4"
+  ],
+  "cutoff_rationale": "2019Q4 is the last pre-pandemic quarter and precedes the 2021-23 evaluation episode; it was fixed before estimation and not chosen for fit.",
+  "frequency": "quarterly",
+  "missing_data": "Equation-specific complete-case rows after lag construction; no imputation.",
+  "revision_policy": "Latest-revised official history is accepted for coefficient estimation; real-time evaluation packets use meeting-date availability separately.",
+  "dataset": {
+    "path": "calibration/frozen/us_macro_1990q1_2019q4.csv",
+    "rows": 120,
+    "columns": [
+      "headline_inflation",
+      "core_inflation",
+      "gdp_growth",
+      "output_gap",
+      "unemployment",
+      "policy_rate",
+      "expected_inflation",
+      "financial_conditions",
+      "credit_growth",
+      "energy_inflation",
+      "real_policy_rate"
+    ],
+    "sha256": "1cea694f37e6d387c78d172f31732489860216c040f23b82ee50cfad53a38c86"
+  },
+  "sources": [
+    {
+      "series_id": "PCEPI",
+      "name": "PCE price index",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPI&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly last; annualized log difference",
+      "sha256": "e899ed0a5cb9ad6362be1897513a48021c697b907138733f2b3d5680d453cde8"
+    },
+    {
+      "series_id": "PCEPILFE",
+      "name": "Core PCE price index",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEPILFE&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly last; annualized log difference",
+      "sha256": "910cf71b7701ae2a14990427db20b4aa623b93964d74205b39a944c89ad5ebb4"
+    },
+    {
+      "series_id": "GDPC1",
+      "name": "Real gross domestic product",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPC1&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-10-01"
+      ],
+      "raw_rows": 120,
+      "raw_nulls": 0,
+      "transformation": "quarterly; log growth",
+      "sha256": "caebd2205d499bc427c69c121e509362f77455d409df855288c9fc774b64eae1"
+    },
+    {
+      "series_id": "GDPPOT",
+      "name": "CBO real potential GDP",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=GDPPOT&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-10-01"
+      ],
+      "raw_rows": 120,
+      "raw_nulls": 0,
+      "transformation": "quarterly; output gap",
+      "sha256": "1c5aebef31f967806b656fee88f8221fcab9a364439c67a4cae853711cb92b17"
+    },
+    {
+      "series_id": "UNRATE",
+      "name": "Civilian unemployment rate",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly mean",
+      "sha256": "a002375d39a48a4e74c1e3a974825d363bf54280afcf56f32717068653a41725"
+    },
+    {
+      "series_id": "FEDFUNDS",
+      "name": "Effective federal funds rate",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly mean",
+      "sha256": "fa7f426bab9de3355f4f59ac5f4514b6f25189d59aceaf2d77c6ea000936b705"
+    },
+    {
+      "series_id": "MICH",
+      "name": "University of Michigan expected inflation",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MICH&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly mean",
+      "sha256": "066c2ac0ff4a09612a3f486f21d75f83290934ce722d2bc1fed9435d2eeff8f1"
+    },
+    {
+      "series_id": "NFCI",
+      "name": "Chicago Fed National Financial Conditions Index",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=NFCI&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-05",
+        "2019-12-27"
+      ],
+      "raw_rows": 1565,
+      "raw_nulls": 0,
+      "transformation": "quarterly mean",
+      "sha256": "5786992a4370a2c2fc194bb759295073ea0f61ca6f31335528b5a3eafd673d38"
+    },
+    {
+      "series_id": "TOTALSL",
+      "name": "Total consumer credit owned and securitized",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=TOTALSL&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-01",
+        "2019-12-01"
+      ],
+      "raw_rows": 360,
+      "raw_nulls": 0,
+      "transformation": "quarterly last; annualized log growth",
+      "sha256": "60255767ca9f95beaa633946e2a3bab0f966471b7b2950a3be117d5b56be7e41"
+    },
+    {
+      "series_id": "DCOILWTICO",
+      "name": "WTI crude oil price",
+      "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO&cosd=1990-01-01&coed=2019-12-31",
+      "range": [
+        "1990-01-02",
+        "2019-12-31"
+      ],
+      "raw_rows": 7826,
+      "raw_nulls": 962,
+      "transformation": "quarterly mean; annualized log difference",
+      "sha256": "66254672f250e1d9fbb1923d4caf570155da7406ae0145759715e5d08f3b4d5a"
+    }
+  ],
+  "software": {
+    "python": "3.12.10",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3"
+  },
+  "code_version": "387cf09d802f93a414b661112c48431b3beae418"
+}
