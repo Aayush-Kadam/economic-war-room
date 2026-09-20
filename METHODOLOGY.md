@@ -2,16 +2,16 @@
 
 ## Calibration
 
-The release is a transparent literature-informed calibration, not a newly estimated causal model. Persistence, Phillips slope, Okun mapping and distributed policy lag are intentionally conservative and exposed in `Parameters`. Their purpose is plausible signs, timing and uncertainty—not reproduction of the realized 2022 path. This is a limitation and the principal target for the next research release.
+The release combines equation-specific estimates from a frozen 1990Q1–2019Q4 dataset with literature-informed transmission parameters where identification is weak. The estimation window was fixed before fitting and excludes the pandemic and 2021–23 evaluation episode. Monetary-policy coefficients are not presented as causal because the policy rate reacts endogenously to the economy.
 
 | Parameter | Value | Status | Interpretation |
 |---|---:|---|---|
-| inflation persistence | 0.66 | provisional calibration | quarterly inertia |
-| expectations weight | 0.34 | identity complement | forward/anchored component |
-| output persistence | 0.64 | provisional calibration | activity inertia |
+| inflation persistence | 0.66 | literature-informed; direct Q/Q estimate failed measurement-consistent replay | Y/Y inertia |
+| expectations weight | 0.06 | estimated, weak | anchored component |
+| output persistence | 0.85 | estimated then regularised | activity inertia |
 | policy-to-output | 0.16 | literature-informed prior | delayed real-rate channel |
-| Phillips slope | 0.10 | literature-informed prior | output-to-price pressure |
-| Okun coefficient | 0.16 | literature-informed prior | activity-to-unemployment |
+| Phillips slope | 0.014 | estimated, weak | output-to-price pressure |
+| Okun coefficient | 0.288 | estimated | activity-to-unemployment |
 | inflation shock σ | 0.32 | provisional calibration | path dispersion |
 | output shock σ | 0.28 | provisional calibration | path dispersion |
 

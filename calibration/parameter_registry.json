@@ -1,0 +1,12 @@
+{
+  "sample":"1991Q2-2019Q4",
+  "parameters":[
+    {"symbol":"rho_pi","value":0.66,"classification":"literature-informed","estimated_value":0.270797,"standard_error":0.095036,"reason":"quarterly estimate is not measurement-compatible with year-over-year scenario state"},
+    {"symbol":"beta_expectations","value":0.06,"classification":"estimated-weak","standard_error":0.158429},
+    {"symbol":"kappa","value":0.014,"classification":"estimated-weak","standard_error":0.041479},
+    {"symbol":"rho_output","value":0.85,"classification":"estimated-regularised","estimated_value":0.947379},
+    {"symbol":"phi_policy_output","value":0.16,"classification":"literature-informed","reason":"endogenous distributed-lag regression did not identify a stable causal effect"},
+    {"symbol":"okun","value":0.288,"classification":"estimated","equation_rmse":0.233},
+    {"symbol":"inflation_target","value":2.0,"classification":"institutional"}
+  ]
+}
