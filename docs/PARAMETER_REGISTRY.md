@@ -18,3 +18,17 @@ Frozen estimation sample: 1991Q2–2019Q4. Scenario evaluation begins in 2022. V
 | σy | 0.28 | output innovation | interactive dispersion calibration | fat-tail comparison | design assumption |
 
 Machine-readable regression output, standard errors, residuals and expanding-window RMSE are stored in `calibration/estimated_parameters.json`. Weak results are retained as evidence rather than promoted into the engine.
+
+## R9 monthly validation and transmission parameters
+
+| Item | Value | Status |
+|---|---:|---|
+| price-flow autoregression | 12 lags, ridge 0.2 | fitted at each expanding origin |
+| annual inflation mapping | sum of 12 monthly log changes | exact identity |
+| interval minimum history | 24 prior signed errors per horizon | predeclared design |
+| output kernel | peak month 18, -0.60 pp per 100 bp | literature-calibrated |
+| inflation kernel | peak month 24, -0.30 pp per 100 bp | literature-calibrated |
+| unemployment kernel | peak month 22, +0.20 pp per 100 bp | literature-calibrated |
+| financial-conditions kernel | peak month 6, +0.30 per 100 bp | literature-calibrated |
+
+The kernels describe unexpected path deviations relative to a baseline. They are not estimates from the frozen macro sample.

@@ -1,4 +1,4 @@
-# Economic War Room
+# Economic War Room — Research Preview
 
 **Monetary Policy Under Fire** — a historical central-banking decision laboratory created by Aayush Kadam.
 
@@ -16,7 +16,7 @@ pnpm build
 
 The application stores the Governor's Record in browser-local storage. No account or external service is required. ALFRED retrieval requires a personal `FRED_API_KEY`; copy `.env.example` and do not commit the key.
 
-Private release: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
+Existing research-preview deployment: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
 
 ## What is implemented
 
@@ -36,6 +36,6 @@ Private release: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
 
 ## Scientific position
 
-This is a calibrated semi-structural counterfactual simulation—not a structural causal estimate and not a forecast service. Some coefficients are estimated on a frozen pre-pandemic sample; weakly identified policy and credibility mechanisms remain literature-informed or designed. The historical replay currently underperforms persistence, so quantitative paths remain illustrative.
+This is a calibrated semi-structural counterfactual simulation—not a structural causal estimate, forecast service, or policy-advice system. R9's primary monthly rolling replay beats persistence at 1–6 months and narrowly trails it at 12 months; its uncertainty bands pass a predeclared calibration guardrail but under-cover at the longest horizon. Policy transmission remains literature-calibrated rather than locally identified. Quantitative paths remain illustrative.
 
 See [MODEL_SPECIFICATION.md](MODEL_SPECIFICATION.md), [METHODOLOGY.md](METHODOLOGY.md), [DATA_SOURCES.md](DATA_SOURCES.md), [LIMITATIONS.md](LIMITATIONS.md), and [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
