@@ -1,0 +1,1 @@
+{"id":"rbi-inflation-2022-24","status":"experimental","country":"India","central_bank":"Reserve Bank of India","extensions":["oil_imports","inr_pass_through","fed_spillover","fx_intervention","liquidity"],"scientific_warning":"Contemporaneous-vintage coverage is incomplete; not a production scenario."}
