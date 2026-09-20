@@ -1,15 +1,15 @@
 # Project status
 
-Branch: `research/r9-scientific-repair`
+Branch: `research/r10-engine-unification`
 
-Recovery base: `7259d42d26c703cad94a2e7594a36ac63de222ed` (`m8-public-release-candidate` remains unchanged)
+R10 verdict: `NEEDS REVISION`. The implementation and stress evidence are complete, with 58 Python and 4 browser tests passing and a successful production build.
 
-Current milestone: R9 — final gate `PASS WITH LIMITATIONS`
+R9 baseline was verified at commit `70886d37d91511bb46620a8570289da663ada9b5`: 48 Python and 3 browser tests passed and the production build completed. The immutable milestone tag `r9-scientific-repair` is authorized for that exact commit.
 
-Release position: research preview; no v1.0 tag and no deployment change
+R10 replaces the independent browser equations with a shared monthly JSON specification consumed by Python and TypeScript. Inflation is a monthly log-price flow and reported YoY inflation is an exact rolling 12-month sum. Player-minus-baseline policy deviations feed overlapping literature-calibrated kernels.
 
-R9 repairs the inflation measurement clock, adds a 108-origin monthly rolling replay at four horizons, calibrates intervals only from prior residuals, separates unexpected policy-path deviations from rate levels, and replaces hard-bound-saturating policy rules with inertial alternatives.
+Model selection retained the parsimonious core and rejected energy and expectations augmentation. The untouched 2020–2025 stress test beats recorded baselines on RMSE but exposes severe fixed-interval under-coverage. Exact browser/validation historical replication remains blocked by approximate browser initialization, and public redistribution remains blocked by incomplete series-level licensing review.
 
-Predeclared metrics: mean short-horizon relative RMSE 0.775; worst-horizon relative RMSE 1.041; maximum absolute coverage error 0.107. The 12-month forecast still trails persistence and the policy transmission kernels remain literature-calibrated rather than locally identified.
+No `v1.0.0` exists. The existing deployment remains unchanged.
 
-Existing milestones M0–M8 and the `m8-public-release-candidate` tag are preserved. R9 does not support an unqualified production, causal, forecasting, or policy-advice claim.
+Release decisions: GitHub `NOT READY`; deployment `DO NOT DEPLOY`; v0.9 research-preview gate `NO`; v1.0 research-grade gate `NO`.

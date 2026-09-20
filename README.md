@@ -1,8 +1,10 @@
-# Economic War Room — Research Preview
+# Economic War Room
+
+**Historical Monetary-Policy Simulator — Research Preview**
 
 **Monetary Policy Under Fire** — a historical central-banking decision laboratory created by Aayush Kadam.
 
-The released scenario places the player at seven FOMC decisions in 2022. Information is cut off at the meeting date, the historical action is hidden until commitment, and a seeded semi-structural model produces a distribution of alternative outcomes. Actual history is always labelled as observed; player outcomes are always labelled as model-generated counterfactuals.
+The functional scenario places the player at seven FOMC decisions in 2022. Information is cut off at the meeting date, the historical action is hidden until commitment, and a seeded monthly model produces a distribution of alternative outcomes. Actual history is always labelled as observed; player outcomes are model-generated counterfactuals. This is not an official Federal Reserve or RBI product, and no optimal historical policy is claimed.
 
 ## Quick start
 
@@ -36,6 +38,10 @@ Existing research-preview deployment: https://economic-war-room-aayush.aayushonf
 
 ## Scientific position
 
-This is a calibrated semi-structural counterfactual simulation—not a structural causal estimate, forecast service, or policy-advice system. R9's primary monthly rolling replay beats persistence at 1–6 months and narrowly trails it at 12 months; its uncertainty bands pass a predeclared calibration guardrail but under-cover at the longest horizon. Policy transmission remains literature-calibrated rather than locally identified. Quantitative paths remain illustrative.
+This is a calibrated counterfactual simulation—not a structural causal estimate, forecast service, or policy-advice system. Code, frozen inputs, retrieval utilities, and tests make the analysis reproducible. The monthly core passes the current short-horizon validation gates but remains weaker than simple baselines at 12 months in the pre-pandemic test. Post-pandemic fixed intervals under-cover materially. Policy transmission is literature-calibrated rather than locally identified. Quantitative paths remain illustrative.
+
+## R10 reproducibility
+
+Run `python r10/run_r10_evaluation.py` after retrieving the listed FRED series (`PCEPI`, `DCOILWTICO`, and `MICH`) into `work/`. Run `python -m pytest`, `pnpm test`, and `pnpm build` for the full verification stack. The currently linked deployment predates R10 and still uses the R9-era browser engine; it has not been replaced.
 
 See [MODEL_SPECIFICATION.md](MODEL_SPECIFICATION.md), [METHODOLOGY.md](METHODOLOGY.md), [DATA_SOURCES.md](DATA_SOURCES.md), [LIMITATIONS.md](LIMITATIONS.md), and [REPRODUCIBILITY.md](REPRODUCIBILITY.md).

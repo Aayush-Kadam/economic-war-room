@@ -1,49 +1,45 @@
-# External scientific review packet
+# External review packet
 
-## Summary
+## Purpose
 
-Economic War Room is an educational historical decision laboratory. The production scenario uses dated information packets and a transparent semi-structural state model. Alternative outcomes are model-generated counterfactuals, not estimates of what certainly would have occurred.
+Economic War Room is a playable historical monetary-policy simulator and research preview. It compares a player's policy path with the dated historical baseline; it does not estimate an optimal policy or represent the Federal Reserve.
 
-## Identification and calibration
+## Core model and data
 
-The estimation sample is frozen at 2019Q4. Equation-specific OLS estimates inflation persistence, expectations/slack correlations, output persistence, Okun dynamics and credit correlations. Monetary policy is endogenous; the weak distributed-rate regression is not treated as causal. The policy response profile remains literature-informed, consistent with Federal Reserve discussion of long and variable lags and peak activity/inflation effects around one to two years.
+The canonical economy is monthly. A frozen pre-2020 PCE price-index sample estimates a regularised 12-lag monthly price-flow model. Reported YoY inflation is the exact rolling sum of twelve monthly log changes. Official FRED series, vintage manifests, checksums, and retrieval code provide the audit trail.
 
-Directly promoting quarterly core-inflation persistence into the year-over-year scenario state failed replay validation. The release therefore retains a measurement-consistent persistence calibration and records the failed alternative. Full equations are in `MODEL_SPECIFICATION.md`; numerical provenance is in `docs/PARAMETER_REGISTRY.md` and `calibration/estimated_parameters.json`.
+## Estimation and model selection
 
-## Frozen sample
+R9 established the monthly core. R10 predeclared 2010–2015 model selection and required a richer model to improve mean 1/3/6/12-month RMSE by at least 1%. Core, energy-augmented, and energy-plus-expectations models scored 0.555, 0.569, and 0.660 respectively; the parsimonious core was retained.
 
-- Window: 1990Q1–2019Q4; equation sample begins after lag construction.
-- Ten official FRED series; 120 quarterly rows.
-- Dataset and every raw series are SHA-256 checksummed.
-- Latest-revised history is used for estimation; meeting packets separately enforce real-time release availability.
+## Unified architecture
 
-## Vintage methodology
+`engine/unified_spec.json` is consumed by both Python and the browser. FOMC decisions remain dated events while the economy advances monthly. The target rate is held between meetings. Player-minus-baseline deviations, not absolute rate levels, drive policy transmission.
 
-Seven 2022 manifests record cutoff, series, observation period, release date, vintage date, retrieval date, transformation and source. Actual policy is stored separately with `post_commit_only` visibility. Adversarial tests reject future releases, future vintages, malformed dates, exposed actions and timezone-boundary leakage. Expected inflation, output gap and stress are honestly marked as constructed states rather than observed releases.
+## Transmission
 
-## Validation and robustness
+Literature-calibrated monthly kernels peak at 6 months for financial conditions, 18 for output, 22 for unemployment, and 24 for inflation. These are calibration targets, not locally identified causal estimates.
 
-Historical replay verdict: **NEEDS REVISION**. Six next-meeting inflation observations yield RMSE 1.856 percentage points versus 0.643 for persistence; 80% coverage is 0%. The model captures direction in 80% of available transitions but mean-reverts too quickly. It is not validated as a superior forecasting model.
+## Validation
 
-IRFs preserve the intended ordering: activity responds before inflation, unemployment rises after contraction, and magnitude increases with the policy shock. A 27-case parameter grid, Gaussian/Student-t comparison, parameter draws, 2,000-path frontier and policy tournament are reproducible. The limited model-uncertainty layer does not capture structural-form uncertainty.
+On the separated 2016–2019 test, core RMSE is 0.131/0.263/0.423/0.726 at 1/3/6/12 months. It beats persistence through 6 months but trails persistence (0.658) and AR(4) (0.610) at 12 months.
 
-## Scenario generalisation
+On the untouched 2020–2025 stress period, core RMSE is 0.198/0.438/0.780/1.748 and beats all recorded baselines at every horizon. Fixed pre-2020 90% coverage falls to 73.1%/70.1%/52.2%/50.7%, showing severe structural-break under-coverage.
 
-Fed 2007–09 and RBI 2022–24 have modular, country-specific experimental extensions. The crisis module includes the effective lower bound, bank-stress feedback and liquidity/balance-sheet offsets. The India module includes oil/imported inflation, INR pass-through, Fed spillovers, intervention and liquidity. Neither has complete vintage packets or replay validation, so neither is production-ready.
+## Welfare and policy rules
 
-## Questions for reviewers
+The displayed loss is a normalized quadratic illustration over inflation, output, and unemployment. Rule comparisons use identical information and seeds but remain conditional on model and welfare weights.
 
-1. Are the transmission mechanisms economically defensible?
-2. Is the calibration methodology appropriate?
-3. Are lag structures plausible?
-4. Are counterfactual claims appropriately limited?
-5. Is the uncertainty interpretation clear?
-6. Is welfare scoring economically reasonable?
-7. Does historical replay provide meaningful validation?
-8. Are benchmark policy comparisons fair?
-9. What would prevent use as an educational research tool?
-10. Which model component is currently least defensible?
+## Limitations
 
-## Known limitations
+Long-horizon pre-pandemic performance remains weak; post-pandemic intervals are miscalibrated; policy responses are externally calibrated; browser initialization approximates the unobserved monthly flow history; energy and expectations augmentation did not survive selection; bundled-data redistribution terms require confirmation.
 
-Weak Phillips/expectations identification, no external monetary-policy instrument, six-point replay evaluation, incomplete vintage coverage for constructed states, simplified shock structure, no structural-form model averaging, and experimental-only secondary scenarios.
+## Questions for an external reviewer
+
+1. Is the monthly flow/rolling-YoY representation adequate for this educational counterfactual use?
+2. Is the path-deviation convolution defensible without a locally estimated surprise series?
+3. Does adding policy kernels to an autoregressive price-flow core risk double counting persistence or transmission?
+4. Are the selection and untouched stress windows sufficiently separated?
+5. Should structural-break uncertainty be modelled by regimes, or only disclosed?
+6. Are the welfare weights and benchmark rules fair enough for public comparison?
+7. What claim language should be further weakened before publication?

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it."
 title: "Economic War Room: Monetary Policy Under Fire"
-version: 1.0.0
+version: 0.9.0-research-preview
 type: software
 authors:
   - family-names: Kadam
