@@ -16,6 +16,10 @@ def test_parameter_uncertainty_reproducible():
  s=MacroState(4,3,2.5,0,4,2); assert simulate(s,Policy(3),seed=3,paths=20,parameter_uncertainty=True)==simulate(s,Policy(3),seed=3,paths=20,parameter_uncertainty=True)
 def test_fat_tail_mode_finite():
  s=MacroState(4,3,2.5,0,4,2); r=simulate(s,Policy(3),seed=4,paths=50,shock_distribution="student_t"); assert all(math.isfinite(x["inflation"]["p50"]) for x in r)
-def test_replay_report_admits_failure(): assert "NEEDS REVISION" in (ROOT/"reports/HISTORICAL_REPLAY_VALIDATION.md").read_text()
+def test_replay_report_preserves_legacy_failure_and_r9_limits():
+    report = (ROOT/"reports/HISTORICAL_REPLAY_VALIDATION.md").read_text()
+    assert "RMSE 1.856 versus persistence 0.643" in report
+    assert "12-month model does not beat persistence" in report
+    assert "PASS WITH LIMITATIONS" in report
 def test_secondary_scenarios_are_experimental():
  for p in (ROOT/"scenarios/fed_2008/scenario.json",ROOT/"scenarios/rbi_2022/scenario.json"): assert json.loads(p.read_text())["status"]=="experimental"
