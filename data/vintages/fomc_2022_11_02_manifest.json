@@ -1,0 +1,56 @@
+{
+  "meeting_date": "2022-11-02",
+  "information_cutoff": "2022-11-02T14:00:00-04:00",
+  "actual_policy_action": {
+    "target_midpoint_percent": 3.875,
+    "visibility": "post_commit_only",
+    "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+  },
+  "features": [
+    {
+      "series": "CPIAUCSL",
+      "observation_period": "latest monthly",
+      "release_date": "2022-10-13",
+      "vintage_date": "2022-10-13",
+      "retrieval_date": "2026-09-20",
+      "transformed_value": 8.2,
+      "transformation": "12-month percent change",
+      "source": "BLS CPI initial release archive"
+    },
+    {
+      "series": "CPILFESL",
+      "observation_period": "latest monthly",
+      "release_date": "2022-10-13",
+      "vintage_date": "2022-10-13",
+      "retrieval_date": "2026-09-20",
+      "transformed_value": 6.6,
+      "transformation": "12-month percent change",
+      "source": "BLS CPI initial release archive"
+    },
+    {
+      "series": "UNRATE",
+      "observation_period": "latest monthly",
+      "release_date": "2022-10-07",
+      "vintage_date": "2022-10-07",
+      "retrieval_date": "2026-09-20",
+      "transformed_value": 3.5,
+      "transformation": "level, percent",
+      "source": "BLS Employment Situation archive"
+    }
+  ],
+  "constructed_state": [
+    {
+      "name": "expected_inflation",
+      "classification": "calibrated state proxy; not an observed release"
+    },
+    {
+      "name": "output_gap",
+      "classification": "model state; not an observed release"
+    },
+    {
+      "name": "financial_stress",
+      "classification": "calibrated state proxy; not an observed release"
+    }
+  ],
+  "provenance_complete": true
+}
