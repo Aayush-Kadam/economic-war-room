@@ -1,0 +1,6 @@
+[
+ {"id":"CPIAUCSL","name":"Consumer Price Index for All Urban Consumers","institution":"U.S. Bureau of Labor Statistics","provider":"FRED/ALFRED","frequency":"monthly","units":"index 1982-84=100","transformation":"year-over-year percent change","vintage_required":true,"url":"https://fred.stlouisfed.org/series/CPIAUCSL"},
+ {"id":"CPILFESL","name":"Consumer Price Index excluding food and energy","institution":"U.S. Bureau of Labor Statistics","provider":"FRED/ALFRED","frequency":"monthly","units":"index 1982-84=100","transformation":"year-over-year percent change","vintage_required":true,"url":"https://fred.stlouisfed.org/series/CPILFESL"},
+ {"id":"UNRATE","name":"Civilian unemployment rate","institution":"U.S. Bureau of Labor Statistics","provider":"FRED/ALFRED","frequency":"monthly","units":"percent","transformation":"level","vintage_required":true,"url":"https://fred.stlouisfed.org/series/UNRATE"},
+ {"id":"FEDFUNDS","name":"Effective federal funds rate","institution":"Federal Reserve Board","provider":"FRED","frequency":"monthly","units":"percent","transformation":"level","vintage_required":false,"url":"https://fred.stlouisfed.org/series/FEDFUNDS"}
+]

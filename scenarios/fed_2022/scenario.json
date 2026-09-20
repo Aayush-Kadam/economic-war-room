@@ -1,0 +1,9 @@
+{
+  "id":"fed-inflation-2022","country":"United States","central_bank":"Federal Reserve",
+  "mode":"historical-real-time","date_range":["2022-03-16","2022-12-14"],
+  "decision_dates":["2022-03-16","2022-05-04","2022-06-15","2022-07-27","2022-09-21","2022-11-02","2022-12-14"],
+  "policy_options_bp":[-100,-75,-50,-25,0,25,50,75,100],
+  "mandate":{"inflation":1.0,"output":0.6,"unemployment":0.35,"financial_stress":0.25},
+  "paths":1000,"seed":220316,
+  "disclaimer":"Actual outcomes are observations. Alternative-policy outcomes are model-generated counterfactuals."
+}
