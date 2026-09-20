@@ -5,7 +5,7 @@ Recovery base: `387cf09d802f93a414b661112c48431b3beae418` (`m8-public-release-ca
 Current milestone: R8 — final gate verdict `NEEDS REVISION`  
 Tests: 40 Python + 3 Node = 43 passed; production build passed  
 Last completed task: final scientific claim, chart, test, performance and build audits  
-Known blockers: replay RMSE 1.856 vs persistence 0.643 with zero 50/80/90% coverage; no structural policy-shock IRF; secondary scenarios remain experimental  
+Known blockers: replay RMSE 1.856 vs persistence 0.643 with zero 50/80/90% coverage; no structural policy-shock IRF; unsmoothed benchmark rules saturate the 10% bound; secondary scenarios remain experimental  
 Next exact action: redesign the inflation measurement/state equation and validate it on a larger meeting/quarter evaluation before any V1.0 tag or deployment
 
 M0 — PASS: charter, model, schema, architecture and validation plan complete.
