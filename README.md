@@ -16,6 +16,8 @@ pnpm build
 
 The application stores the Governor's Record in browser-local storage. No account or external service is required. ALFRED retrieval requires a personal `FRED_API_KEY`; copy `.env.example` and do not commit the key.
 
+Private release: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
+
 ## What is implemented
 
 - playable Fed inflation-shock scenario from March through December 2022;

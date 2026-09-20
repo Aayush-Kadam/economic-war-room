@@ -16,6 +16,6 @@ M6 — PASS: responsive public-facing application, methodology and results views
 
 M7 — NEEDS REVISION: Fed 2007–09 and RBI are research cards; Argentina and synthetic sandbox are not released.
 
-M8 — CONDITIONAL PASS: documentation, licence, citation, tests and build are present; external econometric validation and deployment remain required for an unqualified public-release verdict.
+M8 — CONDITIONAL PASS: documentation, licence, citation, tests, production build and private deployment are complete; external econometric validation remains required for an unqualified public-release verdict.
 
 Next action: replace provisional calibration with a frozen-sample estimation package and publish validation/robustness figures.
