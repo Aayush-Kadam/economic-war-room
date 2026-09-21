@@ -43,3 +43,5 @@ next-env.d.ts
 /outputs/
 /work/
 /calibration/frozen/raw/
+/calibration/frozen/*.csv
+/data/generated/

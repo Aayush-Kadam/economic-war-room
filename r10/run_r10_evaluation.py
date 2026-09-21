@@ -9,9 +9,9 @@ OUT=ROOT/"r10/results";OUT.mkdir(parents=True,exist_ok=True)
 H=(1,3,6,12); RIDGE=.2
 
 def load():
- p=pd.read_csv(ROOT/"work/PCEPI_latest.csv",parse_dates=[0],index_col=0).iloc[:,0].rename("price")
- oil=pd.read_csv(ROOT/"work/DCOILWTICO_latest.csv",parse_dates=[0],index_col=0,na_values=".").iloc[:,0].resample("MS").mean().rename("oil")
- mich=pd.read_csv(ROOT/"work/MICH_latest.csv",parse_dates=[0],index_col=0,na_values=".").iloc[:,0].rename("mich")
+ p=pd.read_csv(ROOT/"data/generated/PCEPI_latest.csv",parse_dates=[0],index_col=0).iloc[:,0].rename("price")
+ oil=pd.read_csv(ROOT/"data/generated/DCOILWTICO_latest.csv",parse_dates=[0],index_col=0,na_values=".").iloc[:,0].resample("MS").mean().rename("oil")
+ mich=pd.read_csv(ROOT/"data/generated/MICH_latest.csv",parse_dates=[0],index_col=0,na_values=".").iloc[:,0].rename("mich")
  d=pd.concat([p,oil,mich],axis=1);d["flow"]=pd.Series(monthly_log_change(p),index=p.index[1:]);d["oil12"]=100*np.log(d.oil/d.oil.shift(12));d["yoy"]=100*np.log(d.price/d.price.shift(12));return d
 def fit_predict(d,origin,h,kind):
  lags=12; train=d.iloc[:origin+1].copy(); cols=[]
