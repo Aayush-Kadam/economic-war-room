@@ -1,11 +1,11 @@
 # Limitations
 
-1. The frozen sample and equation estimates improve auditability, but the monetary-policy multiplier remains literature-informed because a simple distributed-lag regression does not solve policy endogeneity.
-2. Seven meeting manifests cover the released indicators, while expected inflation, output gap and stress remain explicitly constructed states rather than complete ALFRED observations.
-3. Gaussian shocks understate skewness, fat tails and regime change. Financial stress is nonlinear but highly reduced-form.
-4. Policy is not fully endogenous to the economy, Lucas-critique effects are not resolved, and fiscal policy is exogenous.
-5. Expectations and communication are stylized; credibility is not directly observable.
-6. Model uncertainty is larger than the displayed within-model fan. The band is not a frequentist confidence interval.
-7. Fed 2007–09 and RBI 2022–24 have country-specific experimental modules but lack full packets and historical validation. Argentina and the synthetic generator remain unreleased.
-8. The six-transition historical replay underperforms a persistence baseline and has zero empirical interval coverage. Forecasting validity is not established.
-9. The application has not been externally peer reviewed. It is educational and not policy, legal or investment advice.
+1. Policy transmission is literature-calibrated because the project does not identify exogenous monetary-policy shocks locally.
+2. Expected inflation, output, and stress include constructed model states rather than complete contemporaneous historical observations.
+3. The shock process is reduced-form and does not capture all skewness, fat tails, structural breaks, fiscal innovations, or supply-chain dynamics.
+4. Calibrated predictive intervals are not claimed. R11 and R12 candidates failed frozen joint calibration, sharpness, width, and proper-score gates.
+5. The displayed shading is simulation dispersion conditional on the model, not a confidence interval or probability that the economy will fall inside the band.
+6. The core mean model is weaker than simple baselines at twelve months in the 2016–2019 test.
+7. Live official-data refreshes can revise or extend observations and therefore need not reproduce archived evaluation metrics exactly.
+8. Fed 2007–09 and RBI 2022–24 remain unreleased research prototypes without complete historical packets or validation.
+9. The project has not received external economist peer review and is not policy, legal, or investment advice.

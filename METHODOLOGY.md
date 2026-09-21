@@ -1,34 +1,23 @@
 # Methodology
 
-## Calibration
+## Information and measurement
 
-The release combines equation-specific estimates from a frozen 1990Q1–2019Q4 dataset with literature-informed transmission parameters where identification is weak. The estimation window was fixed before fitting and excludes the pandemic and 2021–23 evaluation episode. Monetary-policy coefficients are not presented as causal because the policy rate reacts endogenously to the economy.
+The released Fed 2022 scenario uses meeting-date information cutoffs. Each meeting initializes the engine with twelve monthly log changes constructed from the PCEPI vintage available at that cutoff. Their rolling sum is the engine's year-over-year PCE inflation state. Headline CPI is displayed only as supplementary historical context.
 
-| Parameter | Value | Status | Interpretation |
-|---|---:|---|---|
-| inflation persistence | 0.66 | literature-informed; direct Q/Q estimate failed measurement-consistent replay | Y/Y inertia |
-| expectations weight | 0.06 | estimated, weak | anchored component |
-| output persistence | 0.85 | estimated then regularised | activity inertia |
-| policy-to-output | 0.16 | literature-informed prior | delayed real-rate channel |
-| Phillips slope | 0.014 | estimated, weak | output-to-price pressure |
-| Okun coefficient | 0.288 | estimated | activity-to-unemployment |
-| inflation shock σ | 0.32 | provisional calibration | path dispersion |
-| output shock σ | 0.28 | provisional calibration | path dispersion |
+## Mean inflation model
 
-## Historical packets
+The canonical mean model is a regularized twelve-lag autoregression in monthly PCE log-price changes. Model selection was fixed to 2010–2015. The parsimonious core beat energy and energy-plus-expectations candidates on mean selection RMSE and was retained. The untouched archived tests cover 2016–2019 and the post-2019 stress period.
 
-Meeting dates come from the Federal Reserve calendar. Release values in the interface are contemporaneous headline indicators assembled from official release archives. Production retrieval uses ALFRED vintage parameters; the registry distinguishes vintage-required data. A packet is valid only if every release date is on or before the meeting cutoff.
+## Policy transmission
 
-## R9 inflation validation clock
+Counterfactual transmission uses the player's monthly policy path minus the dated historical baseline path. Overlapping monthly response kernels are literature-calibrated. Absolute rate levels are not repeatedly treated as new shocks, and the response is not presented as locally identified causal evidence.
 
-The predictive validation model runs on a monthly clock. Its state is the monthly log change in the PCE price index; twelve consecutive monthly changes sum exactly to year-over-year log inflation. Forecast origins expand through the frozen pre-2020 sample and never use a later residual or observation. One-, three-, six-, and twelve-month horizons are scored separately against persistence, AR(1), and AR(4) baselines.
+## Simulation dispersion
 
-This validation model does not silently replace the interactive quarterly simulator. It is a measurement-consistent diagnostic layer. The distinction is deliberate and exposed in the reports.
+The interactive display generates 1,000 deterministic seeded paths from the documented stochastic shock process. The centre line is the simulation median and the shaded area contains the central 80% of those generated paths.
 
-## Policy transmission claim
-
-Counterfactual transmission uses the player's path minus a dated baseline path. Monthly response kernels are literature-calibrated and are not locally estimated structural shocks. Permanent rate-step charts from the older simulator remain model sensitivity exercises, not causal IRFs.
+That shading is not a calibrated predictive interval, confidence interval, or real-world probability statement. R11 and R12 tested fixed, rolling, exponentially weighted, conformal, and volatility-scaled interval procedures. Some improved empirical coverage, but none satisfied the frozen joint calibration, sharpness, width, and proper-score gates. V0.9 therefore makes no calibrated probabilistic forecasting claim.
 
 ## Interpretation
 
-Model-implied probabilities are Monte Carlo frequencies conditional on the specified model and shocks. The actual FOMC path and macro outcomes are observations. The player's path is not an estimate of what history would certainly have been.
+Historical releases and the actual FOMC path are observations. Player outcomes are model-generated counterfactuals conditional on the specified engine, baseline, policy path, and shocks. Simulation frequencies describe the model's own generated paths only; they are not estimates of real-world event probabilities.

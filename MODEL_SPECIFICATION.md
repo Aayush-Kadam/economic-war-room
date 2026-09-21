@@ -1,33 +1,27 @@
 # Model specification
 
-## State and timing
+## Canonical monthly state
 
-Quarterly state `x = [π, πcore, Eπ, y, u, i, c, f, credibility, fx]`: annual inflation rates, output gap, unemployment rate, nominal policy rate, credit gap, financial stress, bounded credibility and exchange-rate gap. A decision sets `i`, guidance and balance-sheet stance; shocks then realize; financial conditions and output move before inflation.
+The released engine is defined by `engine/unified_spec.json` and implemented in Python and the browser. Inflation is represented as twelve monthly PCE log-price changes; reported year-over-year inflation is their exact rolling sum. Activity, unemployment, and financial stress evolve on the same monthly clock.
 
-## Equations
+## Inflation flow
 
-The implementation in `engine/model.py` uses:
+`flow(t+1) = intercept + sum(beta_j * flow(t+1-j)) + policy_response(t)/12 + shock(t+1)`
 
-`Eπ(t+1) = π* + (Eπ(t)-π*)·(0.72-0.18·credibility) - 0.12·guidance`
+The twelve autoregressive coefficients and intercept are shared across implementations. The policy response is divided across monthly flow state so the rolling-sum identity remains authoritative.
 
-`c(t+1) = 0.70c(t) - 0.10·real_stance(t)`
+## Policy path response
 
-`y(t+1) = 0.64y(t) - 0.16·lag(h)·real_stance(t) + 0.08c(t+1) - 0.08f(t) + εy`
+For each month, the engine computes the basis-point difference between the player's policy rate and the historical baseline. Literature-calibrated response kernels convolve current and earlier differences into inflation, output, unemployment, and financial-condition contributions. Meeting rates remain in effect until a listed later meeting changes them; no meetings are invented.
 
-`π(t+1) = 0.66π(t) + 0.34Eπ(t+1) + 0.10y(t+1) - 0.12·max(h-2,0)·lag(h)·real_stance(t) + supply + επ`
+## External shocks
 
-`u(t+1) = bound[u(t) - 0.16y(t+1) + 0.035·lag(h)·real_stance(t)]`
+Observed external inputs, stochastic innovations, and policy-induced effects are separate channels. Shared deterministic fixtures prove Python/browser equality for zero deviation, temporary and repeated tightening, return to baseline, an extreme allowed path, and overlapping deviations and shocks.
 
-`lag(h)=min(1,h/4)` prevents instantaneous inflation effects. Stress is persistent and rises only when restrictive stance or impaired credit crosses a threshold. Credibility is bounded `[0.2,1]`, improves slowly and deteriorates with target misses.
+## Simulation dispersion
 
-## Shocks and uncertainty
+The browser uses a fixed seed to generate reproducible stochastic paths. The displayed central path and spread summarize these model-generated simulations only. They are not calibrated probabilities or confidence intervals. Formal uncertainty-validation failures are preserved in the R11 and R12 reports.
 
-Inflation and demand innovations are Gaussian in the interactive baseline, with standard deviations 0.32 and 0.28. A fixed seed and identical inputs reproduce identical paths. The interface reports the median and 10th/90th percentiles from 1,000 paths.
+## Model loss
 
-## Welfare
-
-`L = 1.0((π-2)/2)^2 + 0.6(y/2)^2 + 0.35((u-4)/1.5)^2 + 0.25f^2`. Normalization prevents unlike units from being naively added. These weights represent a dual-mandate profile, not an objectively correct social welfare function.
-
-## Economic signs
-
-Higher sustained real stance lowers credit and output, raises unemployment and lowers inflation with a delay. Positive demand shocks raise output and inflation pressure. Supply pressure raises inflation while decaying. Hawkish guidance modestly lowers expected inflation. Directional tests compare common random numbers rather than requiring every stochastic path to obey the median sign.
+The interface reports a normalized quadratic model loss combining inflation, output, and unemployment gaps. It is a transparent decision aid and sensitivity measure, not an objectively correct social-welfare function or ranking of historical policymakers.

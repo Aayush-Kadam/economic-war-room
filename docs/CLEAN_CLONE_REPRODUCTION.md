@@ -20,6 +20,7 @@ python calibration/estimate_parameters.py
 python r10/run_r10_evaluation.py
 python r11/run_uncertainty_repair.py
 python scripts/build_parity_fixtures.py
+python r12/run_r12_uncertainty.py
 python -m pytest -q
 pnpm test
 pnpm build
@@ -27,6 +28,8 @@ pnpm start
 ```
 
 Open the local URL printed by `pnpm start`, enter the Fed 2022 scenario, lock one decision, reveal history, and advance once. Confirm that the briefing shows Headline PCE as the engine state and Headline CPI as supplementary information.
+
+Also confirm that the shaded chart is labelled `SIMULATION DISPERSION`, carries the not-calibrated disclaimer, and that the results page distinguishes observed FOMC history from the model-generated policy path.
 
 ## Expected generated paths
 
