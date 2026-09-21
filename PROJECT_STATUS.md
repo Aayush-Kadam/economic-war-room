@@ -1,15 +1,25 @@
 # Project status
 
-Branch: `research/r10-engine-unification`
+Updated: 2026-09-21
 
-R10 verdict: `NEEDS REVISION`. The implementation and stress evidence are complete, with 58 Python and 4 browser tests passing and a successful production build.
+Branch: `research/r11-release-hardening`
 
-R9 baseline was verified at commit `70886d37d91511bb46620a8570289da663ada9b5`: 48 Python and 3 browser tests passed and the production build completed. The immutable milestone tag `r9-scientific-repair` is authorized for that exact commit.
+R11 verdict: `NEEDS REVISION`.
 
-R10 replaces the independent browser equations with a shared monthly JSON specification consumed by Python and TypeScript. Inflation is a monthly log-price flow and reported YoY inflation is an exact rolling 12-month sum. Player-minus-baseline policy deviations feed overlapping literature-calibrated kernels.
+Recovered R11 work was found uncommitted on top of R10 commit `dc91dd198e64d7b758dc04fd2f3133bf2e64e58b`. It has been preserved and verified. The initial recovered suite had one Python failure (missing PCE retrieval metadata) and one browser failure (a stale reference to the replaced TypeScript engine); both recovery defects were repaired without changing the mean model.
 
-Model selection retained the parsimonious core and rejected energy and expectations augmentation. The untouched 2020–2025 stress test beats recorded baselines on RMSE but exposes severe fixed-interval under-coverage. Exact browser/validation historical replication remains blocked by approximate browser initialization, and public redistribution remains blocked by incomplete series-level licensing review.
+Completed R11 work:
 
-No `v1.0.0` exists. The existing deployment remains unchanged.
+- all seven 2022 FOMC scenarios initialize the PCE engine with twelve actual vintage PCE monthly log-price changes;
+- CPI remains supplementary and is never passed to the PCE engine;
+- deterministic Python/browser parity covers six policy paths and shared external shocks at `1e-12` tolerance;
+- official-data retrieval, vintage construction, calibration, and validation no longer depend on a developer-local `work/` path;
+- raw downloaded and reconstructed calibration observations are excluded from the public package;
+- the R10 mean model and its recorded 2020–2025 RMSE results remain unchanged;
+- 74 Python tests and 10 browser tests pass; the production build passes.
 
-Release decisions: GitHub `NOT READY`; deployment `DO NOT DEPLOY`; v0.9 research-preview gate `NO`; v1.0 research-grade gate `NO`.
+Uncertainty result: exponentially weighted absolute residual intervals were selected on 2020–2022 and evaluated on untouched 2023–2025 origins. They materially repair 12-month 90% coverage (83.9% to 93.5%) with a 14.0% mean width increase, but mean interval score worsens by 1.7%. This fails the predeclared requirement for a 10% score improvement. Gate F therefore fails.
+
+Next action: design and predeclare a new uncertainty experiment using a new validation/final split or independent future data. Do not tune against the opened 2023–2025 final window.
+
+Release decisions: GitHub research-preview tag `NO`; deployment `DO NOT DEPLOY`; v1.0 gate `CLOSED`. No `v0.9.0-research-preview` or `v1.0.0` tag may be created while Gate F fails.

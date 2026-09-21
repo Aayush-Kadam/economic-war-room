@@ -1,10 +1,12 @@
 # Economic War Room
 
-**Historical Monetary-Policy Simulator — Research Preview**
+### Historical Monetary-Policy Simulator — Research Preview
+
+Creator: **Aayush Kadam**
 
 **Monetary Policy Under Fire** — a historical central-banking decision laboratory created by Aayush Kadam.
 
-The functional scenario places the player at seven FOMC decisions in 2022. Information is cut off at the meeting date, the historical action is hidden until commitment, and a seeded monthly model produces a distribution of alternative outcomes. Actual history is always labelled as observed; player outcomes are model-generated counterfactuals. This is not an official Federal Reserve or RBI product, and no optimal historical policy is claimed.
+The playable Fed 2022 scenario uses vintage-aware PCE initialization and one unified monthly economic specification in Python and the browser. Information is cut off at each meeting date, the historical action is hidden until commitment, and a seeded model produces alternative outcomes. Those counterfactuals are not historical facts. Monetary transmission is literature-calibrated; research-grade structural causality is not claimed. This is experimental research software, not an official Federal Reserve or RBI product, and no optimal historical policy is claimed.
 
 ## Quick start
 
@@ -40,8 +42,33 @@ Existing research-preview deployment: https://economic-war-room-aayush.aayushonf
 
 This is a calibrated counterfactual simulation—not a structural causal estimate, forecast service, or policy-advice system. Code, frozen inputs, retrieval utilities, and tests make the analysis reproducible. The monthly core passes the current short-horizon validation gates but remains weaker than simple baselines at 12 months in the pre-pandemic test. Post-pandemic fixed intervals under-cover materially. Policy transmission is literature-calibrated rather than locally identified. Quantitative paths remain illustrative.
 
-## R10 reproducibility
+## R11 reproducibility
 
-Run `python r10/run_r10_evaluation.py` after retrieving the listed FRED series (`PCEPI`, `DCOILWTICO`, and `MICH`) into `work/`. Run `python -m pytest`, `pnpm test`, and `pnpm build` for the full verification stack. The currently linked deployment predates R10 and still uses the R9-era browser engine; it has not been replaced.
+```powershell
+pnpm install --frozen-lockfile
+python scripts/fetch_official_data.py
+python scripts/build_vintages.py
+python calibration/build_frozen_sample.py
+python calibration/estimate_parameters.py
+python r10/run_r10_evaluation.py
+python r11/run_uncertainty_repair.py
+python -m pytest -q
+pnpm test
+pnpm build
+```
+
+See [clean-clone reproduction](docs/CLEAN_CLONE_REPRODUCTION.md) and [data licensing](docs/DATA_LICENSING.md). The current live demo predates the R11 candidate and has not been replaced: https://economic-war-room-aayush.aayushonfleek.chatgpt.site
+
+## Current validation
+
+| Window | 1 month | 3 months | 6 months | 12 months |
+|---|---:|---:|---:|---:|
+| 2016–2019 core RMSE | 0.131 | 0.263 | 0.423 | 0.726 |
+| 2020–2025 core RMSE | 0.198 | 0.438 | 0.780 | 1.748 |
+| 2023–2025 adaptive 90% coverage | 83.9% | 90.3% | 93.5% | 93.5% |
+
+Known limitations: the 12-month pre-pandemic forecast trails simple baselines; the selected adaptive intervals improve coverage but fail the predeclared interval-score gate; policy transmission is calibrated rather than locally identified; and the live deployment does not yet run this candidate.
+
+![Economic War Room interface](public/og.png)
 
 See [MODEL_SPECIFICATION.md](MODEL_SPECIFICATION.md), [METHODOLOGY.md](METHODOLOGY.md), [DATA_SOURCES.md](DATA_SOURCES.md), [LIMITATIONS.md](LIMITATIONS.md), and [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
