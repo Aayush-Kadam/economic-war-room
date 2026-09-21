@@ -1,0 +1,4505 @@
+{
+  "tolerance": 1e-12,
+  "fixtures": [
+    {
+      "name": "A_baseline",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.582868109544213,
+          "monthly_price_change": 0.18583790816268625,
+          "output_gap": 0.47104999999999997,
+          "unemployment": 4.009799999999999,
+          "financial_stress": 0.16200000000000003,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.162611213877539,
+          "monthly_price_change": 0.14457491534342629,
+          "output_gap": 0.43691849999999993,
+          "unemployment": 4.0144079999999995,
+          "financial_stress": 0.14580000000000004,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.753703455102872,
+          "monthly_price_change": 0.12051757623879898,
+          "output_gap": 0.44381094499999996,
+          "unemployment": 4.018831679999999,
+          "financial_stress": 0.13122000000000003,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 5,
+          "pce_yoy": 4.282156641198017,
+          "monthly_price_change": 0.06809082768863481,
+          "output_gap": 0.4104966166499999,
+          "unemployment": 4.023078412799999,
+          "financial_stress": 0.11809800000000004,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 6,
+          "pce_yoy": 4.008662673946914,
+          "monthly_price_change": 0.12350527840977961,
+          "output_gap": 0.4181817181504999,
+          "unemployment": 4.027155276287998,
+          "financial_stress": 0.10628820000000004,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 7,
+          "pce_yoy": 3.7438705321728825,
+          "monthly_price_change": 0.11687948987185846,
+          "output_gap": 0.3856362666059849,
+          "unemployment": 4.031069065236478,
+          "financial_stress": 0.09565938000000004,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 8,
+          "pce_yoy": 3.563981435876437,
+          "monthly_price_change": 0.16605923635106076,
+          "output_gap": 0.3940671786078053,
+          "unemployment": 4.034826302627018,
+          "financial_stress": 0.08609344200000005,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 9,
+          "pce_yoy": 3.1000345407999554,
+          "monthly_price_change": 0.15967760376384693,
+          "output_gap": 0.3622451632495711,
+          "unemployment": 4.038433250521938,
+          "financial_stress": 0.07748409780000004,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 10,
+          "pce_yoy": 2.6607701178387257,
+          "monthly_price_change": 0.13054736602381695,
+          "output_gap": 0.371377808352084,
+          "unemployment": 4.0418959205010605,
+          "financial_stress": 0.06973568802000003,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 11,
+          "pce_yoy": 2.2639183802243354,
+          "monthly_price_change": 0.1293074672186239,
+          "output_gap": 0.34023647410152147,
+          "unemployment": 4.045220083681018,
+          "financial_stress": 0.06276211921800003,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 12,
+          "pce_yoy": 1.811481970515365,
+          "monthly_price_change": 0.11536991191408015,
+          "output_gap": 0.3500293798784758,
+          "unemployment": 4.048411280333777,
+          "financial_stress": 0.056485907296200025,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 13,
+          "pce_yoy": 1.5580477729875457,
+          "monthly_price_change": 0.0976801920009325,
+          "output_gap": 0.3195284984821215,
+          "unemployment": 4.051474829120426,
+          "financial_stress": 0.050837316566580026,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 14,
+          "pce_yoy": 1.49297370312496,
+          "monthly_price_change": 0.12076383830010053,
+          "output_gap": 0.32994264352765784,
+          "unemployment": 4.054415835955609,
+          "financial_stress": 0.04575358490992203,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 15,
+          "pce_yoy": 1.5015162886748632,
+          "monthly_price_change": 0.15311750089332954,
+          "output_gap": 0.30004436422182806,
+          "unemployment": 4.057239202517385,
+          "financial_stress": 0.04117822641892983,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 16,
+          "pce_yoy": 1.5164959445135855,
+          "monthly_price_change": 0.13549723207752123,
+          "output_gap": 0.31104303329517324,
+          "unemployment": 4.059949634416689,
+          "financial_stress": 0.03706040377703684,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 17,
+          "pce_yoy": 1.6076737756600707,
+          "monthly_price_change": 0.15926865883512026,
+          "output_gap": 0.281711742296318,
+          "unemployment": 4.062551649040022,
+          "financial_stress": 0.03335436339933316,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 18,
+          "pce_yoy": 1.656287100529468,
+          "monthly_price_change": 0.17211860327917677,
+          "output_gap": 0.2932603900274285,
+          "unemployment": 4.06504958307842,
+          "financial_stress": 0.030018927059399847,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 19,
+          "pce_yoy": 1.7003274181478674,
+          "monthly_price_change": 0.16091980749025786,
+          "output_gap": 0.2644625783266056,
+          "unemployment": 4.067447599755283,
+          "financial_stress": 0.027017034353459864,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 20,
+          "pce_yoy": 1.6888201594155299,
+          "monthly_price_change": 0.1545519776187232,
+          "output_gap": 0.27652870097680743,
+          "unemployment": 4.069749695765072,
+          "financial_stress": 0.02431533091811388,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 21,
+          "pce_yoy": 1.692270900860153,
+          "monthly_price_change": 0.16312834520847022,
+          "output_gap": 0.2482328399475032,
+          "unemployment": 4.071959707934469,
+          "financial_stress": 0.02188379782630249,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 22,
+          "pce_yoy": 1.708039323671496,
+          "monthly_price_change": 0.14631578883515967,
+          "output_gap": 0.2607858547490781,
+          "unemployment": 4.07408131961709,
+          "financial_stress": 0.019695418043672242,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 23,
+          "pce_yoy": 1.726822188543564,
+          "monthly_price_change": 0.14809033209069197,
+          "output_gap": 0.2329622791066058,
+          "unemployment": 4.076118066832406,
+          "financial_stress": 0.01772587623930502,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 24,
+          "pce_yoy": 1.7748614815125303,
+          "monthly_price_change": 0.1634092048830466,
+          "output_gap": 0.24597341073340762,
+          "unemployment": 4.07807334415911,
+          "financial_stress": 0.015953288615374518,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 25,
+          "pce_yoy": 1.8296610354679124,
+          "monthly_price_change": 0.15247974595631442,
+          "output_gap": 0.2185942084114054,
+          "unemployment": 4.079950410392746,
+          "financial_stress": 0.014357959753837067,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 26,
+          "pce_yoy": 1.8662652608575339,
+          "monthly_price_change": 0.15736806368972206,
+          "output_gap": 0.23203638215906322,
+          "unemployment": 4.081752393977036,
+          "financial_stress": 0.012922163778453361,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 27,
+          "pce_yoy": 1.8787903856334753,
+          "monthly_price_change": 0.16564262566927104,
+          "output_gap": 0.20507529069429134,
+          "unemployment": 4.083482298217954,
+          "financial_stress": 0.011629947400608026,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 28,
+          "pce_yoy": 1.89685089236968,
+          "monthly_price_change": 0.15355773881372597,
+          "output_gap": 0.21892303197346258,
+          "unemployment": 4.085143006289236,
+          "financial_stress": 0.010466952660547223,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 29,
+          "pce_yoy": 1.8909532045760418,
+          "monthly_price_change": 0.15337097104148192,
+          "output_gap": 0.19235534101425872,
+          "unemployment": 4.086737286037667,
+          "financial_stress": 0.0094202573944925,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 30,
+          "pce_yoy": 1.8831090365959837,
+          "monthly_price_change": 0.16427443529911867,
+          "output_gap": 0.20658468078383094,
+          "unemployment": 4.08826779459616,
+          "financial_stress": 0.008478231655043252,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 31,
+          "pce_yoy": 1.868986265985433,
+          "monthly_price_change": 0.14679703687970738,
+          "output_gap": 0.180387140360316,
+          "unemployment": 4.089737082812313,
+          "financial_stress": 0.007630408489538927,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 32,
+          "pce_yoy": 1.8643959055302923,
+          "monthly_price_change": 0.14996161716358247,
+          "output_gap": 0.1949755261495065,
+          "unemployment": 4.091147599499821,
+          "financial_stress": 0.006867367640585034,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 33,
+          "pce_yoy": 1.8634635312825973,
+          "monthly_price_change": 0.1621959709607751,
+          "output_gap": 0.16912626036502132,
+          "unemployment": 4.092501695519828,
+          "financial_stress": 0.0061806308765265305,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 34,
+          "pce_yoy": 1.865440939848516,
+          "monthly_price_change": 0.14829319740107855,
+          "output_gap": 0.18405247255407067,
+          "unemployment": 4.093801627699035,
+          "financial_stress": 0.005562567788873878,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 35,
+          "pce_yoy": 1.8692944310592967,
+          "monthly_price_change": 0.15194382330147263,
+          "output_gap": 0.15853089837744855,
+          "unemployment": 4.095049562591074,
+          "financial_stress": 0.00500631100998649,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 36,
+          "pce_yoy": 1.8700156202140572,
+          "monthly_price_change": 0.164130394037807,
+          "output_gap": 0.17377497142612508,
+          "unemployment": 4.0962475800874305,
+          "financial_stress": 0.004505679908987841,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        }
+      ]
+    },
+    {
+      "name": "B_25bp_temporary",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          2.25,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 2.25,
+          "policy_deviation_bp": 25.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.582189112858976,
+          "monthly_price_change": 0.18515891147744945,
+          "output_gap": 0.4496217963767664,
+          "unemployment": 4.0157033855396245,
+          "financial_stress": 0.19076219863616034,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.00814796022284146,
+          "policy_output_contribution": -0.02142820362323358
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.160335360470645,
+          "monthly_price_change": 0.1429780586217694,
+          "output_gap": 0.3755927182473433,
+          "unemployment": 4.031357364139053,
+          "financial_stress": 0.22037932979891123,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.015630875085388303,
+          "policy_output_contribution": -0.04054042423812012
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.748923213084386,
+          "monthly_price_change": 0.11801318762720718,
+          "output_gap": 0.3268005394276024,
+          "unemployment": 4.051274226267657,
+          "financial_stress": 0.26016844447027493,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.022489455880941544,
+          "policy_output_contribution": -0.05752439727232062
+        },
+        {
+          "month": 5,
+          "pce_yoy": 4.274030430704576,
+          "monthly_price_change": 0.0647448592136796,
+          "output_gap": 0.2244421921875661,
+          "unemployment": 4.074826670004483,
+          "financial_stress": 0.30393222127755193,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.02876219863616031,
+          "policy_output_contribution": -0.07255433105720828
+        },
+        {
+          "month": 6,
+          "pce_yoy": 3.996371950427782,
+          "monthly_price_change": 0.1193407653840883,
+          "output_gap": 0.1519171058297361,
+          "unemployment": 4.101443427805231,
+          "financial_stress": 0.3473740249538996,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.034485497118854756,
+          "policy_output_contribution": -0.08579182059220297
+        },
+        {
+          "month": 7,
+          "pce_yoy": 3.726692066627634,
+          "monthly_price_change": 0.11199174784574224,
+          "output_gap": 0.029972890602110242,
+          "unemployment": 4.130605177154253,
+          "financial_stress": 0.38763662245850966,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.03969375031148765,
+          "policy_output_contribution": -0.09738670205273378
+        },
+        {
+          "month": 8,
+          "pce_yoy": 3.5412617480377673,
+          "monthly_price_change": 0.16051801405763913,
+          "output_gap": -0.05840414789373609,
+          "unemployment": 4.161840717927046,
+          "financial_stress": 0.4229401111405874,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.0444194646138851,
+          "policy_output_contribution": -0.10747785177778303
+        },
+        {
+          "month": 9,
+          "pce_yoy": 3.0712084865571003,
+          "monthly_price_change": 0.15357123735966163,
+          "output_gap": -0.1928459566991545,
+          "unemployment": 4.194723400277788,
+          "financial_stress": 0.45229923108390757,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.04869335102636689,
+          "policy_output_contribution": -0.11619393324223051
+        },
+        {
+          "month": 10,
+          "pce_yoy": 2.625375371314584,
+          "monthly_price_change": 0.1239786737425304,
+          "output_gap": -0.29071467330068945,
+          "unemployment": 4.228867787800492,
+          "financial_stress": 0.4753040071931881,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.052544417552781254,
+          "policy_output_contribution": -0.1236540953025096
+        },
+        {
+          "month": 11,
+          "pce_yoy": 2.2215160349400334,
+          "monthly_price_change": 0.12229986845846376,
+          "output_gap": -0.43196185790223385,
+          "unemployment": 4.26392654159453,
+          "financial_stress": 0.49195074635294334,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.05600005705174236,
+          "policy_output_contribution": -0.12996862480056506
+        },
+        {
+          "month": 12,
+          "pce_yoy": 1.7616591326624567,
+          "monthly_price_change": 0.10794941934547349,
+          "output_gap": -0.5342425585851405,
+          "unemployment": 4.299587511698252,
+          "financial_stress": 0.5025129253873722,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.05908613075369567,
+          "policy_output_contribution": -0.1352395564199737
+        },
+        {
+          "month": 13,
+          "pce_yoy": 1.5003441939274527,
+          "monthly_price_change": 0.089799450793748,
+          "output_gap": -0.6777765243361952,
+          "unemployment": 4.335571023140966,
+          "financial_stress": 0.5074435490243514,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.0618270476512548,
+          "policy_output_contribution": -0.13956124250860893
+        },
+        {
+          "month": 14,
+          "pce_yoy": 1.4277040420808582,
+          "monthly_price_change": 0.11251875963085517,
+          "output_gap": -0.7804641140198056,
+          "unemployment": 4.3716273446060985,
+          "financial_stress": 0.5073022180080384,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.06424583996054024,
+          "policy_output_contribution": -0.14302088541369637
+        },
+        {
+          "month": 15,
+          "pce_yoy": 1.429339041065677,
+          "monthly_price_change": 0.14461305760658805,
+          "output_gap": -0.9227492253160743,
+          "unemployment": 4.4075343283993265,
+          "financial_stress": 0.5027014953774868,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.06636423484198434,
+          "policy_output_contribution": -0.1456990347168629
+        },
+        {
+          "month": 16,
+          "pce_yoy": 1.4381315538719452,
+          "monthly_price_change": 0.1268057004334755,
+          "output_gap": -1.0227368001647978,
+          "unemployment": 4.4430952110771775,
+          "financial_stress": 0.4942682508675687,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.06820272256022818,
+          "policy_output_contribution": -0.14767005160820573
+        },
+        {
+          "month": 17,
+          "pce_yoy": 1.523802528153136,
+          "monthly_price_change": 0.15041583349487025,
+          "output_gap": -1.161057238658769,
+          "unemployment": 4.478136564716053,
+          "financial_stress": 0.4826165463483242,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.06978062125430447,
+          "policy_output_contribution": -0.14900254249891515
+        },
+        {
+          "month": 18,
+          "pce_yoy": 1.5676149964858126,
+          "monthly_price_change": 0.163153233716765,
+          "output_gap": -1.2559852853400393,
+          "unemployment": 4.512506389390977,
+          "financial_stress": 0.46832933775542673,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07111613848125811,
+          "policy_output_contribution": -0.1497597638410335
+        },
+        {
+          "month": 19,
+          "pce_yoy": 1.6074962574645573,
+          "monthly_price_change": 0.15187300882448693,
+          "output_gap": -1.388305726779838,
+          "unemployment": 4.546072337989513,
+          "financial_stress": 0.4519468427081219,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07222642968868545,
+          "policy_output_contribution": -0.15
+        },
+        {
+          "month": 20,
+          "pce_yoy": 1.5924288077486357,
+          "monthly_price_change": 0.14545056434171758,
+          "output_gap": -1.4764334708866806,
+          "unemployment": 4.578720065010924,
+          "financial_stress": 0.43395988388557305,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07312765376435607,
+          "policy_output_contribution": -0.14977691591023787
+        },
+        {
+          "month": 21,
+          "pce_yoy": 1.5928522741793347,
+          "monthly_price_change": 0.1539947037903606,
+          "output_gap": -1.6012803528958084,
+          "unemployment": 4.6103516914956995,
+          "financial_stress": 0.414806887463117,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07383502580410287,
+          "policy_output_contribution": -0.1491398861357283
+        },
+        {
+          "month": 22,
+          "pce_yoy": 1.6060207025457143,
+          "monthly_price_change": 0.13714710210890993,
+          "output_gap": -1.6813762441647915,
+          "unemployment": 4.640884378697445,
+          "financial_stress": 0.39487351085557876,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07436286723251048,
+          "policy_output_contribution": -0.14813430185585746
+        },
+        {
+          "month": 23,
+          "pce_yoy": 1.6226191805796284,
+          "monthly_price_change": 0.138898346492378,
+          "output_gap": -1.7977368140412624,
+          "unemployment": 4.6702490035495465,
+          "financial_stress": 0.37449410885629136,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07472465340458448,
+          "policy_output_contribution": -0.1468018572014148
+        },
+        {
+          "month": 24,
+          "pce_yoy": 1.668874465460473,
+          "monthly_price_change": 0.15420470422631802,
+          "output_gap": -1.8689855258961097,
+          "unemployment": 4.698388929394316,
+          "financial_stress": 0.3539544335678608,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07493305881053063,
+          "policy_output_contribution": -0.14518081627608523
+        },
+        {
+          "month": 25,
+          "pce_yoy": 1.7223754322141798,
+          "monthly_price_change": 0.14330041754745468,
+          "output_gap": -1.9762222222339842,
+          "unemployment": 4.725258865833939,
+          "financial_stress": 0.33349511072143395,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.075,
+          "policy_output_contribution": -0.14330626211475783
+        },
+        {
+          "month": 26,
+          "pce_yoy": 1.7580898211869578,
+          "monthly_price_change": 0.14823314860363335,
+          "output_gap": -2.0381458843181,
+          "unemployment": 4.750823811931799,
+          "financial_stress": 0.3133155507459394,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07493667633665142,
+          "policy_output_contribution": -0.14121032875113548
+        },
+        {
+          "month": 27,
+          "pce_yoy": 1.7700382929981062,
+          "monthly_price_change": 0.15656152941773643,
+          "output_gap": -2.135923925281714,
+          "unemployment": 4.775058077340787,
+          "financial_stress": 0.2935780435092025,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07475360868863251,
+          "policy_output_contribution": -0.1389224174931568
+        },
+        {
+          "month": 28,
+          "pce_yoy": 1.787764064288707,
+          "monthly_price_change": 0.14453147172407613,
+          "output_gap": -2.188315605958605,
+          "unemployment": 4.797944376263344,
+          "financial_stress": 0.2744118560633148,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07446067615557524,
+          "policy_output_contribution": -0.1364693984353425
+        },
+        {
+          "month": 29,
+          "pce_yoy": 1.7817611425702153,
+          "monthly_price_change": 0.14441291177637863,
+          "output_gap": -2.2765419359519146,
+          "unemployment": 4.819472989457156,
+          "financial_stress": 0.2559172070792609,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07406715092792873,
+          "policy_output_contribution": -0.13387579817206763
+        },
+        {
+          "month": 30,
+          "pce_yoy": 1.774000445419417,
+          "monthly_price_change": 0.1553925365659667,
+          "output_gap": -2.3194096524880443,
+          "unemployment": 4.839640989791834,
+          "financial_stress": 0.23816903325715108,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07358173136990129,
+          "policy_output_contribution": -0.13116397461468696
+        },
+        {
+          "month": 31,
+          "pce_yoy": 1.7601247591431135,
+          "monthly_price_change": 0.13799732254818342,
+          "output_gap": -2.398181642671551,
+          "unemployment": 4.858451527136448,
+          "financial_stress": 0.2212204945147113,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.0730125734129442,
+          "policy_output_contribution": -0.128354279758148
+        },
+        {
+          "month": 32,
+          "pce_yoy": 1.7559238305415674,
+          "monthly_price_change": 0.1412496357401716,
+          "output_gap": -2.4317014045803966,
+          "unemployment": 4.875913168616429,
+          "financial_stress": 0.2051061883328563,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07236732034257315,
+          "policy_output_contribution": -0.12546521118899234
+        },
+        {
+          "month": 33,
+          "pce_yoy": 1.755503535368249,
+          "monthly_price_change": 0.15357440861704214,
+          "output_gap": -2.5012639155192318,
+          "unemployment": 4.892039290521974,
+          "financial_stress": 0.18984506099434706,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07165313105737892,
+          "policy_output_contribution": -0.12251355307624712
+        },
+        {
+          "month": 34,
+          "pce_yoy": 1.7581278205034199,
+          "monthly_price_change": 0.1397713872440809,
+          "output_gap": -2.5257405053931015,
+          "unemployment": 4.906847518379543,
+          "financial_stress": 0.17544301596693732,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07087670687531901,
+          "policy_output_contribution": -0.1195145073394465
+        },
+        {
+          "month": 35,
+          "pce_yoy": 1.7627596258318876,
+          "monthly_price_change": 0.1435301518208457,
+          "output_gap": -2.5864501058750116,
+          "unemployment": 4.920359211914096,
+          "financial_stress": 0.16189522845462903,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.07004431695879713,
+          "policy_output_contribution": -0.11648181564370311
+        },
+        {
+          "month": 36,
+          "pce_yoy": 1.7643898221432854,
+          "monthly_price_change": 0.1558349005377159,
+          "output_gap": -2.6022844755289514,
+          "unemployment": 4.932598991833161,
+          "financial_stress": 0.1491881810429752,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.06916182242662107,
+          "policy_output_contribution": -0.11342787283019001
+        }
+      ]
+    },
+    {
+      "name": "C_repeated_50bp",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.5,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.58151011617374,
+          "monthly_price_change": 0.18447991479221268,
+          "output_gap": 0.4281935927535328,
+          "unemployment": 4.0216067710792505,
+          "financial_stress": 0.21952439727232065,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.01629592044568292,
+          "policy_output_contribution": -0.04285640724646716
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.156701513693278,
+          "monthly_price_change": 0.14002320852963895,
+          "output_gap": 0.2714105292482194,
+          "unemployment": 4.060113499357358,
+          "financial_stress": 0.352483056870143,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.047557670616459526,
+          "policy_output_contribution": -0.12393725572270739
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.73823327088164,
+          "monthly_price_change": 0.11095709220182803,
+          "output_gap": 0.044282163103424185,
+          "unemployment": 4.129422271892677,
+          "financial_stress": 0.5957999458106926,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.09253658237834261,
+          "policy_output_contribution": -0.23898605026734865
+        },
+        {
+          "month": 5,
+          "pce_yoy": 4.250434035989904,
+          "monthly_price_change": 0.05183840670175346,
+          "output_gap": -0.36114101417144373,
+          "unemployment": 4.237165519101646,
+          "financial_stress": 0.9543463883657963,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.15006097965066323,
+          "policy_output_contribution": -0.3840947123817652
+        },
+        {
+          "month": 6,
+          "pce_yoy": 3.9523586217005366,
+          "monthly_price_change": 0.09892383137151564,
+          "output_gap": -0.8859851373124715,
+          "unemployment": 4.389818685624112,
+          "financial_stress": 1.4247082382735954,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.21903197388837276,
+          "policy_output_contribution": -0.5556783535661711
+        },
+        {
+          "month": 7,
+          "pce_yoy": 3.6532095488360086,
+          "monthly_price_change": 0.08252255878136207,
+          "output_gap": -1.629857340864736,
+          "unemployment": 4.592804698408142,
+          "financial_stress": 1.9980339031906145,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.29841947451134804,
+          "policy_output_contribution": -0.7504517576716387
+        },
+        {
+          "month": 8,
+          "pce_yoy": 3.4292390702326974,
+          "monthly_price_change": 0.12197785404419467,
+          "output_gap": -2.4835126746195315,
+          "unemployment": 4.838783995319487,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.37096248329343534,
+          "policy_output_contribution": -0.9225510539807376
+        },
+        {
+          "month": 9,
+          "pce_yoy": 2.9121917734842926,
+          "monthly_price_change": 0.10657720209192399,
+          "output_gap": -3.5028653663699036,
+          "unemployment": 5.121072514447998,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.4370874351753925,
+          "policy_output_contribution": -1.0738580719889583
+        },
+        {
+          "month": 10,
+          "pce_yoy": 2.4116983415117503,
+          "monthly_price_change": 0.06931835701250448,
+          "output_gap": -4.583896873428143,
+          "unemployment": 5.433593826490665,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.49719735851907193,
+          "policy_output_contribution": -1.2061174680493363
+        },
+        {
+          "month": 11,
+          "pce_yoy": 1.9462943343156378,
+          "monthly_price_change": 0.06075519763690148,
+          "output_gap": -5.7873260227613486,
+          "unemployment": 5.770834391088679,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.551673075350236,
+          "policy_output_contribution": -1.32094605553605
+        },
+        {
+          "month": 12,
+          "pce_yoy": 1.4187936959391145,
+          "monthly_price_change": 0.04030568324652701,
+          "output_gap": -7.0135477692701,
+          "unemployment": 6.127801747435922,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6008743426199179,
+          "policy_output_contribution": -1.4198415271915914
+        },
+        {
+          "month": 13,
+          "pce_yoy": 1.0843092713816052,
+          "monthly_price_change": 0.016629964971242778,
+          "output_gap": -8.327331944295338,
+          "unemployment": 6.499985460428102,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6451409372994521,
+          "policy_output_contribution": -1.5041906081033418
+        },
+        {
+          "month": 14,
+          "pce_yoy": 0.9341352551081559,
+          "monthly_price_change": 0.034305898518763346,
+          "output_gap": -9.632788661341646,
+          "unemployment": 6.88332065396421,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6847936879927624,
+          "policy_output_contribution": -1.5752766753751684
+        },
+        {
+          "month": 15,
+          "pce_yoy": 0.855975453925397,
+          "monthly_price_change": 0.06186340734688001,
+          "output_gap": -10.998091879825829,
+          "unemployment": 7.274153972778169,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7201354556239974,
+          "policy_output_contribution": -1.634286878324433
+        },
+        {
+          "month": 16,
+          "pce_yoy": 0.7850158215291224,
+          "monthly_price_change": 0.039997459805553436,
+          "output_gap": -12.33046791436688,
+          "unemployment": 7.669211823399587,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7514520656388912,
+          "policy_output_contribution": -1.6823187909358255
+        },
+        {
+          "month": 17,
+          "pce_yoy": 0.7932558482303418,
+          "monthly_price_change": 0.06007843340297288,
+          "output_gap": -13.700940503268397,
+          "unemployment": 8.06557075354796,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7790131940440154,
+          "policy_output_contribution": -1.7203866263325256
+        },
+        {
+          "month": 18,
+          "pce_yoy": 0.7641706407182454,
+          "monthly_price_change": 0.06983862385941919,
+          "output_gap": -15.019339329344989,
+          "unemployment": 8.460629837482522,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8030732094991403,
+          "policy_output_contribution": -1.7494270411746453
+        },
+        {
+          "month": 19,
+          "pce_yoy": 0.7379557950902107,
+          "monthly_price_change": 0.05630771315332742,
+          "output_gap": -16.359063705622066,
+          "unemployment": 8.852084942586762,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8238719735740015,
+          "policy_output_contribution": -1.7703045561574273
+        },
+        {
+          "month": 20,
+          "pce_yoy": 0.6642051551122883,
+          "monthly_price_change": 0.04822721406627227,
+          "output_gap": -17.632108411603916,
+          "unemployment": 9.237904759787273,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8416356011816333,
+          "policy_output_contribution": -1.7838166171505103
+        },
+        {
+          "month": 21,
+          "pce_yoy": 0.6131731384136473,
+          "monthly_price_change": 0.055545185393282966,
+          "output_gap": -18.91384347924404,
+          "unemployment": 9.616308487315246,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8565771831058703,
+          "policy_output_contribution": -1.7906983199882411
+        },
+        {
+          "month": 22,
+          "pce_yoy": 0.5816331002567071,
+          "monthly_price_change": 0.03777831885556437,
+          "output_gap": -20.118054995350263,
+          "unemployment": 9.985745063837598,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8688974724504349,
+          "policy_output_contribution": -1.7916268204835446
+        },
+        {
+          "month": 23,
+          "pce_yoy": 0.5597524442147743,
+          "monthly_price_change": 0.038874541594968656,
+          "output_gap": -21.321738795378298,
+          "unemployment": 10.344873853135132,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8787855367509949,
+          "policy_output_contribution": -1.7872254498885438
+        },
+        {
+          "month": 24,
+          "pce_yoy": 0.5731619131669369,
+          "monthly_price_change": 0.05371515219868959,
+          "output_gap": -22.440154186275596,
+          "unemployment": 10.692546688307134,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8864193774095399,
+          "policy_output_contribution": -1.7780675547586473
+        },
+        {
+          "month": 25,
+          "pce_yoy": 0.5990525819814738,
+          "monthly_price_change": 0.04252063378577974,
+          "output_gap": -23.55162963967549,
+          "unemployment": 11.027791188954696,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.891966518032169,
+          "policy_output_contribution": -1.764680078988163
+        },
+        {
+          "month": 26,
+          "pce_yoy": 0.6120886313637317,
+          "monthly_price_change": 0.04734194790102117,
+          "output_gap": -24.572627655155184,
+          "unemployment": 11.349795269956807,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8955845631767597,
+          "policy_output_contribution": -1.7475469046699583
+        },
+        {
+          "month": 27,
+          "pce_yoy": 0.6059468242305719,
+          "monthly_price_change": 0.05572160021372025,
+          "output_gap": -25.582560792885342,
+          "unemployment": 11.657892765320934,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8974217289458191,
+          "policy_output_contribution": -1.7271119673848152
+        },
+        {
+          "month": 28,
+          "pce_yoy": 0.6098709170563935,
+          "monthly_price_change": 0.043921552631375045,
+          "output_gap": -26.49886612964257,
+          "unemployment": 11.951550095179728,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8976173467919486,
+          "policy_output_contribution": -1.7037821605437853
+        },
+        {
+          "month": 29,
+          "pce_yoy": 0.593995121178973,
+          "monthly_price_change": 0.04420263752555238,
+          "output_gap": -27.40183018823838,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8963023418386371,
+          "policy_output_contribution": -1.677930042485091
+        },
+        {
+          "month": 30,
+          "pce_yoy": 0.5799078029498962,
+          "monthly_price_change": 0.055751305630342356,
+          "output_gap": -28.209671641753523,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8935996869573783,
+          "policy_output_contribution": -1.6498963591622944
+        },
+        {
+          "month": 31,
+          "pce_yoy": 0.5626332251621714,
+          "monthly_price_change": 0.03903313536560265,
+          "output_gap": -29.00337388694999,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8896248337832668,
+          "policy_output_contribution": -1.6199923944490748
+        },
+        {
+          "month": 32,
+          "pce_yoy": 0.5574495940707326,
+          "monthly_price_change": 0.04304358297483338,
+          "output_gap": -29.70177482966628,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8844861217951102,
+          "policy_output_contribution": -1.5885021593247886
+        },
+        {
+          "month": 33,
+          "pce_yoy": 0.5581014132650788,
+          "monthly_price_change": 0.05619700458762918,
+          "output_gap": -30.386406015267262,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.878285166532603,
+          "policy_output_contribution": -1.5556844304909692
+        },
+        {
+          "month": 34,
+          "pce_yoy": 0.5636262393027514,
+          "monthly_price_change": 0.04330314489323695,
+          "output_gap": -30.976588483108422,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8711172279720906,
+          "policy_output_contribution": -1.5217746482991772
+        },
+        {
+          "month": 35,
+          "pce_yoy": 0.5727942440703664,
+          "monthly_price_change": 0.04804254636258368,
+          "output_gap": -31.554277511857617,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8630715600338275,
+          "policy_output_contribution": -1.486986683242448
+        },
+        {
+          "month": 36,
+          "pce_yoy": 0.5804810194367166,
+          "monthly_price_change": 0.06140192756503982,
+          "output_gap": -32.03916366617534,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8542317421472669,
+          "policy_output_contribution": -1.4515144796734543
+        }
+      ]
+    },
+    {
+      "name": "D_return_to_baseline",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          3.0,
+          3.0,
+          3.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 3.0,
+          "policy_deviation_bp": 100.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.580152122803265,
+          "monthly_price_change": 0.1831219214217391,
+          "output_gap": 0.38533718550706564,
+          "unemployment": 4.033413542158502,
+          "financial_stress": 0.27704879454464126,
+          "policy_rate": 3.0,
+          "policy_deviation_bp": 100.0,
+          "policy_inflation_contribution": -0.03259184089136584,
+          "policy_output_contribution": -0.08571281449293432
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.150791813509017,
+          "monthly_price_change": 0.1354715017158516,
+          "output_gap": 0.10590255849643888,
+          "unemployment": 4.105818998714718,
+          "financial_stress": 0.5591661137402859,
+          "policy_rate": 3.0,
+          "policy_deviation_bp": 100.0,
+          "policy_inflation_contribution": -0.09511534123291905,
+          "policy_output_contribution": -0.24787451144541478
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.722763086660408,
+          "monthly_price_change": 0.10139660816485707,
+          "output_gap": -0.35524661879315156,
+          "unemployment": 4.240012863785355,
+          "financial_stress": 1.0603798916213854,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.18507316475668523,
+          "policy_output_contribution": -0.4779721005346973
+        },
+        {
+          "month": 5,
+          "pce_yoy": 4.2214274175227375,
+          "monthly_price_change": 0.03830197245581926,
+          "output_gap": -1.0470658304999532,
+          "unemployment": 4.427639083244791,
+          "financial_stress": 1.6755459821869514,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.26753011840996066,
+          "policy_output_contribution": -0.6824766102705961
+        },
+        {
+          "month": 6,
+          "pce_yoy": 3.907873969822681,
+          "monthly_price_change": 0.08344579796082635,
+          "output_gap": -1.8591360512718822,
+          "unemployment": 4.661071096245506,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.3429486065438264,
+          "policy_output_contribution": -0.8634821956869275
+        },
+        {
+          "month": 7,
+          "pce_yoy": 3.593488933941599,
+          "monthly_price_change": 0.06728659576480757,
+          "output_gap": -2.846293384542306,
+          "unemployment": 4.933359147794449,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.41176578426601085,
+          "policy_output_contribution": -1.0229314148085802
+        },
+        {
+          "month": 8,
+          "pce_yoy": 3.355225928264237,
+          "monthly_price_change": 0.10768532697014413,
+          "output_gap": -3.903530080696916,
+          "unemployment": 5.238181017567162,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.47439484817691,
+          "policy_output_contribution": -1.1626254976908792
+        },
+        {
+          "month": 9,
+          "pce_yoy": 2.8251377102928625,
+          "monthly_price_change": 0.09353628086895428,
+          "output_gap": -5.090658126566997,
+          "unemployment": 5.569795958416549,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.5312262638069586,
+          "policy_output_contribution": -1.2842339482909892
+        },
+        {
+          "month": 10,
+          "pce_yoy": 2.313008163416059,
+          "monthly_price_change": 0.05768224210824289,
+          "output_gap": -6.3072419040600805,
+          "unemployment": 5.923001649922298,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.582628932772133,
+          "policy_output_contribution": -1.3893035212900926
+        },
+        {
+          "month": 11,
+          "pce_yoy": 1.8374257960191402,
+          "monthly_price_change": 0.05057683743609569,
+          "output_gap": -7.617291260319498,
+          "unemployment": 6.293093983556195,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.628951302523562,
+          "policy_output_contribution": -1.4792666133812207
+        },
+        {
+          "month": 12,
+          "pce_yoy": 1.3010022518699564,
+          "monthly_price_change": 0.03138277747386651,
+          "output_gap": -8.924221628602107,
+          "unemployment": 6.675829506643454,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6705224214328771,
+          "policy_output_contribution": -1.5554491060921936
+        },
+        {
+          "month": 13,
+          "pce_yoy": 0.9583327241983316,
+          "monthly_price_change": 0.008444861857127147,
+          "output_gap": -10.295572674660633,
+          "unemployment": 7.067390362314538,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7076529418267713,
+          "policy_output_contribution": -1.6190776949165908
+        },
+        {
+          "month": 14,
+          "pce_yoy": 0.8017893912965469,
+          "monthly_price_change": 0.026578588519954406,
+          "output_gap": -11.63799223178993,
+          "unemployment": 7.464351572097633,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7406360734619628,
+          "policy_output_contribution": -1.671286737369116
+        },
+        {
+          "month": 15,
+          "pce_yoy": 0.7209143378213395,
+          "monthly_price_change": 0.054596448240644184,
+          "output_gap": -13.021977115392904,
+          "unemployment": 7.863650516729277,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7697484898151176,
+          "policy_output_contribution": -1.7131246505566728
+        },
+        {
+          "month": 16,
+          "pce_yoy": 0.6532507473338734,
+          "monthly_price_change": 0.03373301767739103,
+          "output_gap": -14.356877688886177,
+          "unemployment": 8.262558479188375,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.795251189451011,
+          "policy_output_contribution": -1.7455598869550601
+        },
+        {
+          "month": 17,
+          "pce_yoy": 0.6700222326290258,
+          "monthly_price_change": 0.055073457750971624,
+          "output_gap": -15.715657873515525,
+          "unemployment": 8.658654121913873,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8173903146260679,
+          "policy_output_contribution": -1.7694865152959351
+        },
+        {
+          "month": 18,
+          "pce_yoy": 0.6526561317605464,
+          "monthly_price_change": 0.06607969709234696,
+          "output_gap": -17.00991756910268,
+          "unemployment": 9.049798777674729,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.836397929183163,
+          "policy_output_contribution": -1.7857294317926176
+        },
+        {
+          "month": 19,
+          "pce_yoy": 0.6388293692122661,
+          "monthly_price_change": 0.053459833216527176,
+          "output_gap": -18.31466926738939,
+          "unemployment": 9.434113440646554,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8524927576969921,
+          "policy_output_contribution": -1.7950492253597945
+        },
+        {
+          "month": 20,
+          "pce_yoy": 0.5772416938400918,
+          "monthly_price_change": 0.046097651597969955,
+          "output_gap": -19.543375908372795,
+          "unemployment": 9.809957350935624,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8658808877371985,
+          "policy_output_contribution": -1.7981467190050855
+        },
+        {
+          "month": 21,
+          "pce_yoy": 0.537706344736063,
+          "monthly_price_change": 0.05400093176492551,
+          "output_gap": -20.772741839305475,
+          "unemployment": 10.175908072099714,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8767564370285775,
+          "policy_output_contribution": -1.7956672081838647
+        },
+        {
+          "month": 22,
+          "pce_yoy": 0.5167249257775199,
+          "monthly_price_change": 0.03670082314969974,
+          "output_gap": -21.917763999733605,
+          "unemployment": 10.530742967166836,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8853021872038777,
+          "policy_output_contribution": -1.7882044156072945
+        },
+        {
+          "month": 23,
+          "pce_yoy": 0.5042611654614227,
+          "monthly_price_change": 0.03811307711999855,
+          "output_gap": -23.0565352605136,
+          "unemployment": 10.873421984267305,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8916901857647913,
+          "policy_output_contribution": -1.7763041807720024
+        },
+        {
+          "month": 24,
+          "pce_yoy": 0.5260269009454335,
+          "monthly_price_change": 0.05314851295787724,
+          "output_gap": -24.10530710403162,
+          "unemployment": 11.203071668289912,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8960823177905024,
+          "policy_output_contribution": -1.76046790133343
+        },
+        {
+          "month": 25,
+          "pce_yoy": 0.5597585263890114,
+          "monthly_price_change": 0.04217648730070495,
+          "output_gap": -25.1433036332797,
+          "unemployment": 11.518970319966904,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8986308488604604,
+          "policy_output_contribution": -1.7411557423690316
+        },
+        {
+          "month": 26,
+          "pce_yoy": 0.5804730249520706,
+          "monthly_price_change": 0.047293087083013746,
+          "output_gap": -26.087794152849224,
+          "unemployment": 11.820534228501687,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8994789405887282,
+          "policy_output_contribution": -1.7187896285679143
+        },
+        {
+          "month": 27,
+          "pce_yoy": 0.5819378433947653,
+          "monthly_price_change": 0.05606126668333885,
+          "output_gap": -27.018916361699947,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8987611401011357,
+          "policy_output_contribution": -1.6937560334362005
+        },
+        {
+          "month": 28,
+          "pce_yoy": 0.592793450822008,
+          "monthly_price_change": 0.04458862510463365,
+          "output_gap": -27.854757449567487,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8966038447234367,
+          "policy_output_contribution": -1.6664085787185392
+        },
+        {
+          "month": 29,
+          "pce_yoy": 0.5828292736873675,
+          "monthly_price_change": 0.04510928061633118,
+          "output_gap": -28.676185182482726,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.893125743088546,
+          "policy_output_contribution": -1.6370704564022678
+        },
+        {
+          "month": 30,
+          "pce_yoy": 0.5735591115425188,
+          "monthly_price_change": 0.056809534947498234,
+          "output_gap": -29.40193631189663,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.888438233813621,
+          "policy_output_contribution": -1.6060366848883882
+        },
+        {
+          "month": 31,
+          "pce_yoy": 0.5603376258865819,
+          "monthly_price_change": 0.04023834756059028,
+          "output_gap": -30.11345443271934,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8826458228430969,
+          "policy_output_contribution": -1.5735762101796102
+        },
+        {
+          "month": 32,
+          "pce_yoy": 0.558627213499847,
+          "monthly_price_change": 0.04438723921123504,
+          "output_gap": -30.729984661985068,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8758465005016746,
+          "policy_output_contribution": -1.539933862247309
+        },
+        {
+          "month": 33,
+          "pce_yoy": 0.5622892203010251,
+          "monthly_price_change": 0.05766293856610368,
+          "output_gap": -31.333417298219064,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8681320992515851,
+          "policy_output_contribution": -1.5053321760935499
+        },
+        {
+          "month": 34,
+          "pce_yoy": 0.5704601788558378,
+          "monthly_price_change": 0.04487178170451241,
+          "output_gap": -31.843387865691234,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8595886331010842,
+          "policy_output_contribution": -1.469973086418744
+        },
+        {
+          "month": 35,
+          "pce_yoy": 0.5820627491118815,
+          "monthly_price_change": 0.04971564737604217,
+          "output_gap": -32.342125733958085,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8502966195659802,
+          "policy_output_contribution": -1.4340395042375869
+        },
+        {
+          "month": 36,
+          "pce_yoy": 0.5921207296409483,
+          "monthly_price_change": 0.0632064934869441,
+          "output_gap": -32.749558745192694,
+          "unemployment": 12,
+          "financial_stress": 1.8903131469357604,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8403313850429488,
+          "policy_output_contribution": -1.3976967832533584
+        }
+      ]
+    },
+    {
+      "name": "E_extreme_allowed",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          10.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.561140215616636,
+          "monthly_price_change": 0.16411001423510901,
+          "output_gap": -0.2146525159434746,
+          "unemployment": 4.198708337268016,
+          "financial_stress": 1.08239035635713,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -0.2607347271309267,
+          "policy_output_contribution": -0.6857025159434745
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.068056010929364,
+          "monthly_price_change": 0.07174760632282887,
+          "output_gap": -2.2112090320284885,
+          "unemployment": 4.745695989717751,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -0.7609227298633524,
+          "policy_output_contribution": -1.9829960915633182
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.506180507563162,
+          "monthly_price_change": -0.032450168352736224,
+          "output_gap": -5.948649565345212,
+          "unemployment": 5.788281150282848,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -1.4805853180534818,
+          "policy_output_contribution": -3.8237768042775784
+        },
+        {
+          "month": 5,
+          "pce_yoy": 3.774594957868205,
+          "monthly_price_change": -0.19194790810146672,
+          "output_gap": -11.935705476493098,
+          "unemployment": 7.448472113626349,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -2.4009756744106117,
+          "policy_output_contribution": -6.145515398108243
+        },
+        {
+          "month": 6,
+          "pce_yoy": 3.107797838004879,
+          "monthly_price_change": -0.2697978742024439,
+          "output_gap": -20.44848796925704,
+          "unemployment": 9.829769825665807,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -3.504511582213964,
+          "policy_output_contribution": -8.890853657058738
+        },
+        {
+          "month": 7,
+          "pce_yoy": 2.293294798782905,
+          "monthly_price_change": -0.4328314075760839,
+          "output_gap": -31.862261452925548,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -4.774711592181569,
+          "policy_output_contribution": -12.00722812274622
+        },
+        {
+          "month": 8,
+          "pce_yoy": 1.386375691649025,
+          "monthly_price_change": -0.5609707744863739,
+          "output_gap": -46.33291298897306,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -6.196134459825892,
+          "policy_output_contribution": -15.446519379635276
+        },
+        {
+          "month": 9,
+          "pce_yoy": -4.939198821073132e-06,
+          "monthly_price_change": -0.7627561320075176,
+          "output_gap": -64.12765084269051,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -7.754321692669633,
+          "policy_output_contribution": -19.164725243386652
+        },
+        {
+          "month": 10,
+          "pce_yoy": -1.5719012509325856,
+          "monthly_price_change": -1.0020845227487178,
+          "output_gap": -85.30547761047676,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -9.435743054358632,
+          "policy_output_contribution": -23.12165629306696
+        },
+        {
+          "month": 11,
+          "pce_yoy": -3.3256280376446363,
+          "monthly_price_change": -1.2275675818790366,
+          "output_gap": -110.04696556884748,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -11.227744880014388,
+          "policy_output_contribution": -27.280652286685044
+        },
+        {
+          "month": 12,
+          "pce_yoy": -5.37239525864668,
+          "monthly_price_change": -1.4789608993789936,
+          "output_gap": -138.33387469390624,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 10.0,
+          "policy_deviation_bp": 800.0,
+          "policy_inflation_contribution": -13.11850106413265,
+          "policy_output_contribution": -31.6083180921242
+        },
+        {
+          "month": 13,
+          "pce_yoy": -7.472343986097478,
+          "monthly_price_change": -1.7488343379220452,
+          "output_gap": -170.27813630548874,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -15.096966588972803,
+          "policy_output_contribution": -36.07427785239969
+        },
+        {
+          "month": 14,
+          "pce_yoy": -9.604319315443739,
+          "monthly_price_change": -1.967865315111152,
+          "output_gap": -205.11503588601857,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -16.892098740579165,
+          "policy_output_contribution": -39.965243669694495
+        },
+        {
+          "month": 15,
+          "pce_yoy": -11.832621344367197,
+          "monthly_price_change": -2.15655442260063,
+          "output_gap": -242.3119040144523,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -18.515566252790236,
+          "policy_output_contribution": -43.33031920501426
+        },
+        {
+          "month": 16,
+          "pce_yoy": -14.172334444469424,
+          "monthly_price_change": -2.3721632684549627,
+          "output_gap": -281.2375270377813,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -19.97839078652741,
+          "policy_output_contribution": -46.21498014376259
+        },
+        {
+          "month": 17,
+          "pce_yoy": -16.504997797754754,
+          "monthly_price_change": -2.524611261386797,
+          "output_gap": -321.48172413654504,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -21.290980310308022,
+          "policy_output_contribution": -48.66132290989721
+        },
+        {
+          "month": 18,
+          "pce_yoy": -18.900588649670105,
+          "monthly_price_change": -2.665388726117795,
+          "output_gap": -362.52556950630844,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -22.46316083390493,
+          "policy_output_contribution": -50.708297093859784
+        },
+        {
+          "month": 19,
+          "pce_yoy": -21.277434576469684,
+          "monthly_price_change": -2.8096773343756642,
+          "output_gap": -404.0617250492915,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -23.50420657397526,
+          "policy_output_contribution": -52.3919226281723
+        },
+        {
+          "month": 20,
+          "pce_yoy": -23.6464350777052,
+          "monthly_price_change": -2.9299712757218863,
+          "output_gap": -445.66536597822363,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -24.42286862679033,
+          "policy_output_contribution": -53.74549268041086
+        },
+        {
+          "month": 21,
+          "pce_yoy": -25.9019466542754,
+          "monthly_price_change": -3.018267708577718,
+          "output_gap": -487.11516817187965,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -25.22740221967788,
+          "policy_output_contribution": -54.79976317300279
+        },
+        {
+          "month": 22,
+          "pce_yoy": -28.01814221871653,
+          "monthly_price_change": -3.1182800871898495,
+          "output_gap": -528.0648429094332,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -25.925592609429216,
+          "policy_output_contribution": -55.58312978270992
+        },
+        {
+          "month": 23,
+          "pce_yoy": -29.976980559592732,
+          "monthly_price_change": -3.1864059227552395,
+          "output_gap": -568.3646908416873,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -26.524779692720166,
+          "policy_output_contribution": -56.12179321953711
+        },
+        {
+          "month": 24,
+          "pce_yoy": -31.726194968996527,
+          "monthly_price_change": -3.2281753087827876,
+          "output_gap": -607.7336636513694,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -27.031881390538885,
+          "policy_output_contribution": -56.43991353493268
+        },
+        {
+          "month": 25,
+          "pce_yoy": -33.25802018923761,
+          "monthly_price_change": -3.280659558163128,
+          "output_gap": -646.0814079041577,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -27.45341586569873,
+          "policy_output_contribution": -56.55975416232945
+        },
+        {
+          "month": 26,
+          "pce_yoy": -34.59440087989516,
+          "monthly_price_change": -3.304246005768707,
+          "output_gap": -683.1807820161604,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -27.795522629734286,
+          "policy_output_contribution": -56.501816349127495
+        },
+        {
+          "month": 27,
+          "pce_yoy": -35.752270795957074,
+          "monthly_price_change": -3.314424338662538,
+          "output_gap": -718.9903231536445,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.063982592827028,
+          "policy_output_contribution": -56.2849645979689
+        },
+        {
+          "month": 28,
+          "pce_yoy": -36.71732828727952,
+          "monthly_price_change": -3.3372207597774137,
+          "output_gap": -753.3271571554724,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.264237107878134,
+          "policy_output_contribution": -55.92654369643728
+        },
+        {
+          "month": 29,
+          "pce_yoy": -37.53349203903769,
+          "monthly_price_change": -3.340775013144964,
+          "output_gap": -786.1898303187863,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.401406057434112,
+          "policy_output_contribution": -55.44248787797816
+        },
+        {
+          "month": 30,
+          "pce_yoy": -38.19530379527091,
+          "monthly_price_change": -3.3272004823510155,
+          "output_gap": -817.4315580319578,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.480305029870692,
+          "policy_output_contribution": -54.84742262273507
+        },
+        {
+          "month": 31,
+          "pce_yoy": -38.722397642969774,
+          "monthly_price_change": -3.336771182074524,
+          "output_gap": -847.0833708659948,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.505461629046973,
+          "policy_output_contribution": -54.15475957499581
+        },
+        {
+          "month": 32,
+          "pce_yoy": -39.113571149723505,
+          "monthly_price_change": -3.321144782475617,
+          "output_gap": -875.027654763931,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.48113095954992,
+          "policy_output_contribution": -53.37678502391595
+        },
+        {
+          "month": 33,
+          "pce_yoy": -39.38782733944416,
+          "monthly_price_change": -3.2925238982983727,
+          "output_gap": -901.3215674870255,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.411310327654753,
+          "policy_output_contribution": -52.524742366012546
+        },
+        {
+          "month": 34,
+          "pce_yoy": -39.55527387389631,
+          "monthly_price_change": -3.2857266216420022,
+          "output_gap": -925.8708294039021,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.299753196224625,
+          "policy_output_contribution": -51.6089089414874
+        },
+        {
+          "month": 35,
+          "pce_yoy": -39.626037895116696,
+          "monthly_price_change": -3.257169943975623,
+          "output_gap": -948.7533721334256,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -28.14998242995943,
+          "policy_output_contribution": -50.63866761164063
+        },
+        {
+          "month": 36,
+          "pce_yoy": -39.61375773056079,
+          "monthly_price_change": -3.215895144226889,
+          "output_gap": -969.8933443907948,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -27.965302865674325,
+          "policy_output_contribution": -49.622573421371975
+        }
+      ]
+    },
+    {
+      "name": "F_overlapping",
+      "input": {
+        "monthlyPriceChanges": [
+          0.2732339090335984,
+          0.56538251986653,
+          0.5648318110101003,
+          0.529425335013466,
+          0.53963764159349,
+          0.3969992456608823,
+          0.38167163164589013,
+          0.3459483326475061,
+          0.6236244988403286,
+          0.5698117889850467,
+          0.5261592048330141,
+          0.5678063216230503
+        ],
+        "output": 0.5,
+        "unemployment": 4.0,
+        "stress": 0.2,
+        "playerPath": [
+          2.5,
+          3.0,
+          3.0,
+          2.5,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "baselinePath": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      "shockSequence": [
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": -0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.0,
+          "output": -0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        },
+        {
+          "inflation": 0.01,
+          "output": 0.02,
+          "unemployment": 0.005,
+          "financial_conditions": 0.0
+        }
+      ],
+      "expected": [
+        {
+          "month": 1,
+          "pce_yoy": 5.962412721248056,
+          "monthly_price_change": 0.35111438952875207,
+          "output_gap": 0.46499999999999997,
+          "unemployment": 4.005,
+          "financial_stress": 0.18000000000000002,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": 0.0,
+          "policy_output_contribution": 0.0
+        },
+        {
+          "month": 2,
+          "pce_yoy": 5.58151011617374,
+          "monthly_price_change": 0.18447991479221268,
+          "output_gap": 0.4281935927535328,
+          "unemployment": 4.0216067710792505,
+          "financial_stress": 0.21952439727232065,
+          "policy_rate": 3.0,
+          "policy_deviation_bp": 100.0,
+          "policy_inflation_contribution": -0.01629592044568292,
+          "policy_output_contribution": -0.04285640724646716
+        },
+        {
+          "month": 3,
+          "pce_yoy": 5.155343520322805,
+          "monthly_price_change": 0.13866521515916536,
+          "output_gap": 0.22855412200175224,
+          "unemployment": 4.0719202704366095,
+          "financial_stress": 0.41000745414246365,
+          "policy_rate": 3.0,
+          "policy_deviation_bp": 100.0,
+          "policy_inflation_contribution": -0.06385359106214245,
+          "policy_output_contribution": -0.16679366296917456
+        },
+        {
+          "month": 4,
+          "pce_yoy": 4.732323570697379,
+          "monthly_price_change": 0.10640538538804069,
+          "output_gap": -0.1212258076483564,
+          "unemployment": 4.175127771250036,
+          "financial_stress": 0.8024830026808357,
+          "policy_rate": 2.5,
+          "policy_deviation_bp": 50.0,
+          "policy_inflation_contribution": -0.14009425299480213,
+          "policy_output_contribution": -0.36292330599005607
+        },
+        {
+          "month": 5,
+          "pce_yoy": 4.236321845139145,
+          "monthly_price_change": 0.04363591603525609,
+          "output_gap": -0.7178133888215524,
+          "unemployment": 4.335949339915072,
+          "financial_stress": 1.3614019369041683,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.22630164158332294,
+          "policy_output_contribution": -0.5802243554026467
+        },
+        {
+          "month": 6,
+          "pce_yoy": 3.927903710047158,
+          "monthly_price_change": 0.08858111056889521,
+          "output_gap": -1.4492583901356677,
+          "unemployment": 4.546393521489148,
+          "financial_stress": 1.9967491724969282,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.30523936247689354,
+          "policy_output_contribution": -0.7729794029787618
+        },
+        {
+          "month": 7,
+          "pce_yoy": 3.618285380995124,
+          "monthly_price_change": 0.07205330259385638,
+          "output_gap": -2.368987443679351,
+          "unemployment": 4.799172016494217,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.37735719540491863,
+          "policy_output_contribution": -0.9432068052477538
+        },
+        {
+          "month": 8,
+          "pce_yoy": 3.3844128829546953,
+          "monthly_price_change": 0.11207583460707701,
+          "output_gap": -3.3706962766187,
+          "unemployment": 5.087648701376075,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.44308031622146044,
+          "policy_output_contribution": -1.0927784562497296
+        },
+        {
+          "month": 9,
+          "pce_yoy": 2.858208371740309,
+          "monthly_price_change": 0.0974199876259423,
+          "output_gap": -4.513005111311072,
+          "unemployment": 5.405791961939315,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.5028105559919342,
+          "policy_output_contribution": -1.223429722990934
+        },
+        {
+          "month": 10,
+          "pce_yoy": 2.349440725373846,
+          "monthly_price_change": 0.06104414261858363,
+          "output_gap": -5.6943836927622815,
+          "unemployment": 5.7481301391589845,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.5569275982895457,
+          "policy_output_contribution": -1.336768734790541
+        },
+        {
+          "month": 11,
+          "pce_yoy": 1.8767911109104045,
+          "monthly_price_change": 0.05350959036957278,
+          "output_gap": -6.977837249315069,
+          "unemployment": 6.109709898329225,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6057901176478475,
+          "policy_output_contribution": -1.4342850673356566
+        },
+        {
+          "month": 12,
+          "pce_yoy": 1.3429958190900635,
+          "monthly_price_change": 0.034011029802709224,
+          "output_gap": -8.265859991572324,
+          "unemployment": 6.486057343426203,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6497368619782196,
+          "policy_output_contribution": -1.5173578597367072
+        },
+        {
+          "month": 13,
+          "pce_yoy": 1.0029503892702343,
+          "monthly_price_change": 0.011068959708922995,
+          "output_gap": -9.625147592329546,
+          "unemployment": 6.8731417088723195,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.6890876816298243,
+          "policy_output_contribution": -1.5872634005043922
+        },
+        {
+          "month": 14,
+          "pce_yoy": 0.8475240228161465,
+          "monthly_price_change": 0.02905354833812477,
+          "output_gap": -10.961575380702513,
+          "unemployment": 7.267341470623676,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7241445076443671,
+          "policy_output_contribution": -1.6451822161428535
+        },
+        {
+          "month": 15,
+          "pce_yoy": 0.7656231573338949,
+          "monthly_price_change": 0.056764349676913774,
+          "output_gap": -12.34493381324433,
+          "unemployment": 7.665412727694343,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7551922816385402,
+          "policy_output_contribution": -1.6922056939628944
+        },
+        {
+          "month": 16,
+          "pce_yoy": 0.6945723704969676,
+          "monthly_price_change": 0.03535459855111347,
+          "output_gap": -13.683928067602867,
+          "unemployment": 8.064459713908478,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.7824998396330642,
+          "policy_output_contribution": -1.7293422687558664
+        },
+        {
+          "month": 17,
+          "pce_yoy": 0.7072254055546924,
+          "monthly_price_change": 0.056288951092980835,
+          "output_gap": -15.050933426700277,
+          "unemployment": 8.46190730786279,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8063207520385395,
+          "policy_output_contribution": -1.7575232011254975
+        },
+        {
+          "month": 18,
+          "pce_yoy": 0.6856458446294846,
+          "monthly_price_change": 0.06700154964368751,
+          "output_gap": -16.357013397443545,
+          "unemployment": 8.8554754168135,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8268941219046155,
+          "policy_output_contribution": -1.7776079735442765
+        },
+        {
+          "month": 19,
+          "pce_yoy": 0.6677629092956059,
+          "monthly_price_change": 0.0541703672599776,
+          "output_gap": -17.676692324096443,
+          "unemployment": 9.243155117499073,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8444453434400776,
+          "policy_output_contribution": -1.790389328576206
+        },
+        {
+          "month": 20,
+          "pce_yoy": 0.6022819021600101,
+          "monthly_price_change": 0.046594827471481234,
+          "output_gap": -18.92298952655599,
+          "unemployment": 9.623186443795984,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8591868227170953,
+          "policy_output_contribution": -1.79659797218244
+        },
+        {
+          "month": 21,
+          "pce_yoy": 0.5591993900103891,
+          "monthly_price_change": 0.05433747547632125,
+          "output_gap": -20.172206804353785,
+          "unemployment": 9.994037717602367,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.871318662382888,
+          "policy_output_contribution": -1.796906963594475
+        },
+        {
+          "month": 22,
+          "pce_yoy": 0.5350998466624628,
+          "monthly_price_change": 0.03694459927065736,
+          "output_gap": -21.33897641211875,
+          "unemployment": 10.354386325474584,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8810293121162276,
+          "policy_output_contribution": -1.7919358118955795
+        },
+        {
+          "month": 23,
+          "pce_yoy": 0.5198844780555053,
+          "monthly_price_change": 0.038294221762615294,
+          "output_gap": -22.501061417944836,
+          "unemployment": 10.703100849324727,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8884961864843345,
+          "policy_output_contribution": -1.7822542981896483
+        },
+        {
+          "month": 24,
+          "pce_yoy": 0.5391636796879113,
+          "monthly_price_change": 0.05329023143511521,
+          "output_gap": -23.574415616459206,
+          "unemployment": 11.03922446494196,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8938862517776468,
+          "policy_output_contribution": -1.7683860410527161
+        },
+        {
+          "month": 25,
+          "pce_yoy": 0.5702924906449134,
+          "monthly_price_change": 0.042197770665925026,
+          "output_gap": -24.637994969816656,
+          "unemployment": 11.361959527245224,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8973565833254814,
+          "policy_output_contribution": -1.7508118218512307
+        },
+        {
+          "month": 26,
+          "pce_yoy": 0.5884178883653517,
+          "monthly_price_change": 0.047178946058563154,
+          "output_gap": -25.60882780619063,
+          "unemployment": 11.67065326602644,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8990548947245943,
+          "policy_output_contribution": -1.7299726854684727
+        },
+        {
+          "month": 27,
+          "pce_yoy": 0.5874679965613887,
+          "monthly_price_change": 0.0558144578729508,
+          "output_gap": -26.566835803006967,
+          "unemployment": 11.96478452051786,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.899120040344932,
+          "policy_output_contribution": -1.7062728310020574
+        },
+        {
+          "month": 28,
+          "pce_yoy": 0.5963959004764889,
+          "monthly_price_change": 0.044282502466213715,
+          "output_gap": -27.42991303499413,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8976824924122861,
+          "policy_output_contribution": -1.6800823060773697
+        },
+        {
+          "month": 29,
+          "pce_yoy": 0.5848625183578685,
+          "monthly_price_change": 0.04475556897436038,
+          "output_gap": -28.27875516150471,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8948647939059913,
+          "policy_output_contribution": -1.6517395175604035
+        },
+        {
+          "month": 30,
+          "pce_yoy": 0.5742721086249141,
+          "monthly_price_change": 0.05641113991073308,
+          "output_gap": -29.031946077304895,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8907819884510835,
+          "policy_output_contribution": -1.6215535706453281
+        },
+        {
+          "month": 31,
+          "pce_yoy": 0.5598869834092751,
+          "monthly_price_change": 0.03978524204433862,
+          "output_gap": -29.770794142519744,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8855420283283589,
+          "policy_output_contribution": -1.5898064475339995
+        },
+        {
+          "month": 32,
+          "pce_yoy": 0.5571872394656441,
+          "monthly_price_change": 0.04389508352785021,
+          "output_gap": -30.41442535445761,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8792461616723857,
+          "policy_output_contribution": -1.5567550362134597
+        },
+        {
+          "month": 33,
+          "pce_yoy": 0.5599920297765886,
+          "monthly_price_change": 0.057142265787265674,
+          "output_gap": -31.044625612994313,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8719892998766299,
+          "policy_output_contribution": -1.5226330191704296
+        },
+        {
+          "month": 34,
+          "pce_yoy": 0.567363403861391,
+          "monthly_price_change": 0.044315973355459774,
+          "output_gap": -31.580939475860628,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8638603661763347,
+          "policy_output_contribution": -1.4876526312561469
+        },
+        {
+          "month": 35,
+          "pce_yoy": 0.57818820958925,
+          "monthly_price_change": 0.04911902749047434,
+          "output_gap": -32.10551758691298,
+          "unemployment": 12,
+          "financial_stress": 2,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8549426263335322,
+          "policy_output_contribution": -1.4520062953281654
+        },
+        {
+          "month": 36,
+          "pce_yoy": 0.587452333953795,
+          "monthly_price_change": 0.06255435579966029,
+          "output_gap": -32.53822020305106,
+          "unemployment": 12,
+          "financial_stress": 1.9682770049034268,
+          "policy_rate": 2.0,
+          "policy_deviation_bp": 0.0,
+          "policy_inflation_contribution": -0.8453140023044645,
+          "policy_output_contribution": -1.4158681437454728
+        }
+      ]
+    }
+  ]
+}

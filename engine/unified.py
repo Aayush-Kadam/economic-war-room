@@ -49,18 +49,19 @@ def policy_responses(player,baseline):
         result[name]=[sum(deviation[j]/100*kernel[t-j] for j in range(max(0,t-len(kernel)+1),t+1)) for t in range(len(deviation))]
     return deviation,result
 
-def simulate_monthly(initial:UnifiedState, player_path, baseline_path, *, seed=0, stochastic=True):
+def simulate_monthly(initial:UnifiedState, player_path, baseline_path, *, seed=0, stochastic=True, shock_sequence=None):
     deviation,response=policy_responses(player_path,baseline_path); rng=random.Random(seed)
     changes=list(initial.monthly_price_changes); output=initial.output_gap; unemployment=initial.unemployment; stress=initial.financial_stress; rows=[]
     inf=SPEC["inflation"]; st=SPEC["state"]
     for t,rate in enumerate(player_path):
         base=inf["intercept"]+sum(b*changes[-j-1] for j,b in enumerate(inf["lag_coefficients"]))
-        shock=rng.gauss(0,inf["monthly_shock_sigma"]) if stochastic else 0.0
+        declared=(shock_sequence or [{} for _ in player_path])[t]
+        shock=declared.get("inflation",rng.gauss(0,inf["monthly_shock_sigma"]) if stochastic else 0.0)
         # The kernel is a level effect on reported YoY inflation; divide by 12 in
         # the flow state so the exact rolling identity remains authoritative.
         changes.append(base+response["inflation"][t]/12+shock)
-        output=st["output_persistence"]*output+response["output"][t]
-        unemployment=4+st["unemployment_persistence"]*(unemployment-4)+response["unemployment"][t]
-        stress=st["stress_persistence"]*stress+response["financial_conditions"][t]
-        rows.append({"month":t+1,"pce_yoy":sum(changes[-12:]),"monthly_price_change":changes[-1],"output_gap":output,"unemployment":max(2.5,min(12,unemployment)),"financial_stress":max(0,min(2,stress)),"policy_rate":rate,"policy_deviation_bp":deviation[t]})
+        output=st["output_persistence"]*output+response["output"][t]+declared.get("output",0.0)
+        unemployment=4+st["unemployment_persistence"]*(unemployment-4)+response["unemployment"][t]+declared.get("unemployment",0.0)
+        stress=st["stress_persistence"]*stress+response["financial_conditions"][t]+declared.get("financial_conditions",0.0)
+        rows.append({"month":t+1,"pce_yoy":sum(changes[-12:]),"monthly_price_change":changes[-1],"output_gap":output,"unemployment":max(2.5,min(12,unemployment)),"financial_stress":max(0,min(2,stress)),"policy_rate":rate,"policy_deviation_bp":deviation[t],"policy_inflation_contribution":response["inflation"][t],"policy_output_contribution":response["output"][t]})
     return rows

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "clock": "monthly",
+  "channels": {
+    "observed_external": "Optional dated inputs known at the forecast origin; none are inserted into the selected inflation mean core.",
+    "stochastic": {
+      "inflation": "Seeded monthly innovation, sigma from unified_spec.json",
+      "output": "Seeded monthly innovation, browser sigma 0.08",
+      "unemployment": "Seeded monthly innovation, browser sigma 0.04",
+      "financial_conditions": "Zero unless explicitly supplied"
+    },
+    "policy_induced": "Player-minus-baseline path convolution; never included in external or stochastic shocks"
+  },
+  "parity_fixture_fields": ["inflation", "output", "unemployment", "financial_conditions"],
+  "unavailable_history": ["meeting-date supply-chain shock innovations", "fiscal innovations", "monthly latent-output innovations"]
+}

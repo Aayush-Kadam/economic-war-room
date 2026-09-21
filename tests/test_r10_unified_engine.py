@@ -41,8 +41,8 @@ def test_simulation_reports_monthly_clock_and_exact_yoy():
     assert rows[0]["policy_deviation_bp"]==0
 
 def test_frontend_consumes_same_specification():
-    source=(ROOT/"lib/unified-engine.ts").read_text()
-    assert 'engine/unified_spec.json' in source
+    source=(ROOT/"lib/unified-core.mjs").read_text()
+    assert 'deterministicUnified' in source
     assert 'simulateUnified' in (ROOT/"app/page.tsx").read_text(encoding="utf-8")
 
 def test_post_2019_holdout_exists_and_was_not_used_for_selection():
