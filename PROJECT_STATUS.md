@@ -4,7 +4,15 @@ Updated: 2026-09-21
 
 Branch: `research/r12-final-uncertainty`
 
-R12 stage: repository verified; private GitHub backup attempted but blocked because no GitHub CLI, authenticated GitHub connector, or configured remote is available. Scientific protocol design is next. The local repository remains authoritative and clean at the R11 base `7e94445d2056da6b589987eeb7901c4b633cef79`.
+R12 stage: final audit complete. Private GitHub backup remains blocked because no GitHub CLI, authenticated GitHub connector, or configured remote is available.
+
+R12 protocol commit: `ab817bf`. Experiment commit: `aa0150c`.
+
+R12 uncertainty verdict: `FAIL`. No candidate passed the predeclared blocked-confirmation gate. Rolling conformal, exponentially weighted conformal, and volatility-scaled conformal improved calibration error but all exceeded the allowed WIS deterioration, failed the per-horizon 90% coverage requirement, and improved WIS at fewer than two horizons. No method was selected and the R12 release gate is closed.
+
+Latest verification: 78 Python tests and 10 browser tests pass, deterministic parity passes, production build passes, clean-clone official-data reconstruction passes, secret/private-path scan is clear, and no generated raw dataset is tracked.
+
+Next action: accumulate genuinely new outcomes and seek external economist/statistical review. Do not tune further against the already opened 2022–2025 evidence. No `v0.9.0-research-preview` or `v1.0.0` tag is authorized.
 
 R11 verdict: `NEEDS REVISION`.
 
