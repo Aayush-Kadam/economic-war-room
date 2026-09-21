@@ -17,3 +17,14 @@ On the final window, adaptive 90% coverage is 83.9%/90.3%/93.5%/93.5% at 1/3/6/1
 ## Verdict
 
 `NEEDS REVISION`. Measurement, lag history, parity, retrieval, and packaging are repaired. The uncertainty method fails its predeclared proper-score gate, so no v0.9 tag is warranted.
+
+## Verification
+
+- Python: 74 passed, 0 failed.
+- Browser: 10 passed, 0 failed.
+- Production build: passed.
+- Clean clone: passed install, official retrieval, vintage construction, calibration, estimation, validation, tests, and build.
+- Security scan: no committed secrets or private absolute paths found.
+- Packaging scan: no raw file under `data/generated/` or `calibration/frozen/` is tracked.
+
+Live official data are revision-prone. The September 2026 clean-clone refresh extends and revises the archived R10 evaluation inputs, so refreshed metrics are not bitwise equal to the committed R10 snapshot. R11 leaves the canonical mean-model specification and archived R10 evidence unchanged.

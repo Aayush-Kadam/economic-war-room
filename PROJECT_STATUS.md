@@ -17,6 +17,9 @@ Completed R11 work:
 - raw downloaded and reconstructed calibration observations are excluded from the public package;
 - the R10 mean model and its recorded 2020–2025 RMSE results remain unchanged;
 - 74 Python tests and 10 browser tests pass; the production build passes.
+- a fresh isolated clone completed locked dependency installation, official retrieval, vintage and calibration reconstruction, estimation, validation, both test suites, and the production build.
+
+Reproduction caveat: live FRED retrieval in September 2026 contains new and revised observations beyond the archived R10 snapshot, so a live refresh is operationally reproducible but does not reproduce archived forecast metrics bit-for-bit. The canonical mean-model code and committed R10 evidence were not changed by R11.
 
 Uncertainty result: exponentially weighted absolute residual intervals were selected on 2020–2022 and evaluated on untouched 2023–2025 origins. They materially repair 12-month 90% coverage (83.9% to 93.5%) with a 14.0% mean width increase, but mean interval score worsens by 1.7%. This fails the predeclared requirement for a 10% score improvement. Gate F therefore fails.
 
