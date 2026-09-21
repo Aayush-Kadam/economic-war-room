@@ -1,0 +1,175 @@
+{
+  "predeclared": {
+    "selection_window": "2020-01 through 2022-12",
+    "untouched_final_window": "2023-01 through 2025-07-01",
+    "observable_error_rule": "origin+h months must be <= current origin",
+    "gate": {
+      "minimum_90_coverage_each_horizon": 0.7,
+      "minimum_mean_interval_score_improvement": 0.1,
+      "maximum_mean_width_ratio": 2.5
+    }
+  },
+  "selection": {
+    "rolling_signed_36": {
+      "mean_interval_score": 6.087042267272168,
+      "mean_absolute_coverage_error": 0.28425925925925927
+    },
+    "rolling_abs_36": {
+      "mean_interval_score": 5.023696568212947,
+      "mean_absolute_coverage_error": 0.21481481481481482
+    },
+    "ew_abs": {
+      "mean_interval_score": 4.8635602253052115,
+      "mean_absolute_coverage_error": 0.1685185185185186
+    }
+  },
+  "selected": "ew_abs",
+  "final": {
+    "fixed": {
+      "1": {
+        "50": {
+          "coverage": 0.5483870967741935,
+          "mean_width": 0.2189568121180286,
+          "interval_score": 0.3447329871747743
+        },
+        "80": {
+          "coverage": 0.7096774193548387,
+          "mean_width": 0.3451815304628934,
+          "interval_score": 0.5043611244214395
+        },
+        "90": {
+          "coverage": 0.8064516129032258,
+          "mean_width": 0.4050196792853931,
+          "interval_score": 0.5927133932792851
+        }
+      },
+      "3": {
+        "50": {
+          "coverage": 0.6451612903225806,
+          "mean_width": 0.3768546128784239,
+          "interval_score": 0.7340059769653247
+        },
+        "80": {
+          "coverage": 0.7741935483870968,
+          "mean_width": 0.6844234375989265,
+          "interval_score": 0.9767793394825083
+        },
+        "90": {
+          "coverage": 0.8709677419354839,
+          "mean_width": 0.8131391270230055,
+          "interval_score": 1.176015303064347
+        }
+      },
+      "6": {
+        "50": {
+          "coverage": 0.5806451612903226,
+          "mean_width": 0.6052164124036148,
+          "interval_score": 0.9429513395740468
+        },
+        "80": {
+          "coverage": 0.8064516129032258,
+          "mean_width": 1.0228495468597498,
+          "interval_score": 1.2203710415127405
+        },
+        "90": {
+          "coverage": 0.9032258064516129,
+          "mean_width": 1.1551942763821885,
+          "interval_score": 1.4533345512017448
+        }
+      },
+      "12": {
+        "50": {
+          "coverage": 0.41935483870967744,
+          "mean_width": 0.7753418578382776,
+          "interval_score": 1.927846088845658
+        },
+        "80": {
+          "coverage": 0.7741935483870968,
+          "mean_width": 1.7417325055106514,
+          "interval_score": 2.513233597672765
+        },
+        "90": {
+          "coverage": 0.8387096774193549,
+          "mean_width": 2.1635765736429136,
+          "interval_score": 2.8314441573881184
+        }
+      }
+    },
+    "ew_abs": {
+      "1": {
+        "50": {
+          "coverage": 0.5483870967741935,
+          "mean_width": 0.21828086663432494,
+          "interval_score": 0.3497832558406706
+        },
+        "80": {
+          "coverage": 0.7741935483870968,
+          "mean_width": 0.35687454080264186,
+          "interval_score": 0.4859397118353161
+        },
+        "90": {
+          "coverage": 0.8387096774193549,
+          "mean_width": 0.4475424466493142,
+          "interval_score": 0.5665992239983354
+        }
+      },
+      "3": {
+        "50": {
+          "coverage": 0.6451612903225806,
+          "mean_width": 0.3614943728863646,
+          "interval_score": 0.7033064964547024
+        },
+        "80": {
+          "coverage": 0.7419354838709677,
+          "mean_width": 0.773395616254189,
+          "interval_score": 1.012066687686955
+        },
+        "90": {
+          "coverage": 0.9032258064516129,
+          "mean_width": 0.9288575940677228,
+          "interval_score": 1.1429132197193115
+        }
+      },
+      "6": {
+        "50": {
+          "coverage": 0.5806451612903226,
+          "mean_width": 0.6543202291521408,
+          "interval_score": 0.9949217228679439
+        },
+        "80": {
+          "coverage": 0.8709677419354839,
+          "mean_width": 1.1245448528108892,
+          "interval_score": 1.3496731820327892
+        },
+        "90": {
+          "coverage": 0.9354838709677419,
+          "mean_width": 1.2949684205010985,
+          "interval_score": 1.5885412239707828
+        }
+      },
+      "12": {
+        "50": {
+          "coverage": 0.5806451612903226,
+          "mean_width": 1.0883364513928129,
+          "interval_score": 1.8870645260656913
+        },
+        "80": {
+          "coverage": 0.7741935483870968,
+          "mean_width": 2.0602516590880353,
+          "interval_score": 2.535927444480128
+        },
+        "90": {
+          "coverage": 0.9354838709677419,
+          "mean_width": 2.4398464959664956,
+          "interval_score": 2.8595448921910918
+        }
+      }
+    }
+  },
+  "gate_results": {
+    "minimum_90_coverage": 0.8387096774193549,
+    "mean_interval_score_improvement": -0.01698621844800763,
+    "mean_width_ratio": 1.1398233402584406,
+    "pass": false
+  }
+}
