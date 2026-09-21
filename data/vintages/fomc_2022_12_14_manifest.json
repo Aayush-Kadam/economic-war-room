@@ -8,6 +8,17 @@
   },
   "features": [
     {
+      "series": "PCEPI",
+      "observation_period": "2022-10-01",
+      "release_date": "2022-12-01",
+      "vintage_date": "2022-12-14",
+      "retrieval_date": "2026-09-21",
+      "transformed_value": 5.844764750116188,
+      "transformation": "sum of twelve vintage monthly 100*log price changes",
+      "source": "U.S. Bureau of Economic Analysis via ALFRED",
+      "initialization_packet": "data/scenarios/fed_2022_pce_initialization.json"
+    },
+    {
       "series": "CPIAUCSL",
       "observation_period": "latest monthly",
       "release_date": "2022-12-13",
