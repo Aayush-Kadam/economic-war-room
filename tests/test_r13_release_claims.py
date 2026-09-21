@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+import json
 from pathlib import Path
 
 
@@ -42,3 +43,12 @@ def test_negative_uncertainty_evidence_is_preserved():
         "reports/UNCERTAINTY_VALIDATION_STATUS.md",
     )
     assert all((ROOT / path).is_file() for path in required)
+
+
+def test_production_start_uses_standalone_asset_launcher():
+    package = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))
+    assert package["scripts"]["start"] == "node scripts/start_production.mjs"
+    assert 'output: "standalone"' in (ROOT / "next.config.ts").read_text(encoding="utf-8")
+    launcher = (ROOT / "scripts/start_production.mjs").read_text(encoding="utf-8")
+    assert 'join(root, "dist", "standalone", "server.js")' in launcher
+    assert 'resolve(root, "dist", "standalone", "dist", "client")' in launcher
