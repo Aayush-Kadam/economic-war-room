@@ -2,7 +2,9 @@
 
 Updated: 2026-09-21
 
-Branch: `research/r11-release-hardening`
+Branch: `research/r12-final-uncertainty`
+
+R12 stage: repository verified; private GitHub backup attempted but blocked because no GitHub CLI, authenticated GitHub connector, or configured remote is available. Scientific protocol design is next. The local repository remains authoritative and clean at the R11 base `7e94445d2056da6b589987eeb7901c4b633cef79`.
 
 R11 verdict: `NEEDS REVISION`.
 
