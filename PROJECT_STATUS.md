@@ -1,21 +1,23 @@
 # Project status
 
-Updated: 2026-09-21
+Updated: 2026-09-22
 
 Branch: `release/r13-research-preview`
 
-R13 stage: evidence-aligned research-preview release gate passed. The public interface and documentation now describe the shaded distribution only as simulation dispersion, explicitly distinguish observed history from model-generated counterfactuals, and make no calibrated-probability, causal-identification, or optimal-policy claim.
+HEAD at publication finalization: `2a03e87aabf03701e5f79e216a5d6fd6ce04ba05`
 
-R11 and R12 uncertainty verdicts remain failed and are preserved as negative evidence. No interval method passed the predeclared calibration-and-sharpness gates. The mean model was not recalibrated or changed in R13.
+# V0.9 RESEARCH PREVIEW RELEASED — V1.0 PENDING EXTERNAL HUMAN REVIEW
 
-Latest verification: 84 Python tests and 10 browser tests pass; deterministic Python/TypeScript parity passes; a fresh production build passes; a clean clone completes locked installation, official-data reconstruction, estimation, R10/R11/R12 evaluation, all tests, and the production build; the production launcher serves both the application and its client assets; and the complete seven-decision gameplay path reaches the final record with the required scientific labels.
+The complete legitimate Git history is published at <https://github.com/Aayush-Kadam/economic-war-room>. The repository is public, its default branch is `main`, and the GitHub pre-release is published at <https://github.com/Aayush-Kadam/economic-war-room/releases/tag/v0.9.0-research-preview>.
 
-Security and licensing: no committed credential or private absolute path was detected, and no generated raw observation or reconstructed calibration dataset is tracked.
+The annotated tag `v0.9.0-research-preview` remains fixed to the approved R13 audit commit `a0b4895f142552d9bfb5ca750037ee3276f2d5c4`. No `v1.0.0` tag or release exists.
 
-Release decision: `v0.9.0-research-preview` is authorized at the final R13 audit commit. A GitHub release and private backup remain blocked because no remote, GitHub CLI, or authenticated GitHub connector is available. Publication status is `READY FOR PUBLICATION — REMOTE REQUIRED`.
+Validation remains evidence-aligned: 84 Python tests and 10 browser/TypeScript tests pass (94 total, 0 failures); deterministic Python/TypeScript parity passes; the production build passes; and clean-clone reproduction passes. Fast GitHub Actions CI separately runs the fixture-backed 80-test Python boundary, 10 browser/parity tests, and the production build. Full official-data reconstruction remains a documented manual workflow.
 
-Deployment recommendation: `DEPLOY` the evidence-aligned research preview after the private remote is configured and independently reviewed. This is not authorization for a v1 release.
+The V0.9 scientific contract is unchanged. The interface describes uncertainty only as **Simulation dispersion** and makes no claim of calibrated predictive probability, causal identification, optimal policy, forecasting superiority, or research-grade validation. R12's failed uncertainty protocol and all negative results remain preserved and publicly visible.
 
-V1 gate: `CLOSED`. Future work should accumulate genuinely new outcomes and seek independent economist/statistical review rather than tune against the already opened evidence windows.
+Security and licensing checks pass: no committed credential or private absolute path was detected, no generated raw observation or reconstructed calibration dataset is tracked, and the project retains its licence, citation metadata, official-data sourcing, reproducibility documentation, scientific contract, and validation reports.
 
-Finalization phase: started 2026-09-22. Local verification reconfirmed 84 Python tests, 10 browser/TypeScript tests, deterministic parity, and a successful production build. Fast CI, public-release notes, a compact economist review packet, a selective reviewer shortlist, and an unsent outreach draft have been prepared without changing the scientific model or the V0.9 contract. GitHub publication, release publication, visibility, and R13 deployment remain pending external platform completion.
+The evidence-aligned release was deployed to <https://economic-war-room-aayush.aayushonfleek.chatgpt.site/> from commit `2a03e87aabf03701e5f79e216a5d6fd6ce04ba05`. The deployment remains owner-private and requires authorized ChatGPT access. The homepage and first live decision path were verified after deployment; the complete seven-meeting path and final record are covered by the passing browser suite.
+
+The economist review packet, reviewer shortlist, and unsent outreach draft are complete. No outreach was sent and no independent human scientific review has been received. V1.0 therefore remains closed pending substantive review by a qualified independent economist or econometrician and resolution of any resulting release-blocking findings.

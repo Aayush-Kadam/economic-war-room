@@ -14,7 +14,7 @@ Economic War Room is an educational and research-preview simulator for examining
 
 ## Live demo
 
-[Open the Economic War Room](https://economic-war-room-aayush.aayushonfleek.chatgpt.site/). The deployment may require access while publication is being finalized.
+[Open the Economic War Room](https://economic-war-room-aayush.aayushonfleek.chatgpt.site/). The release deployment is currently owner-private and requires authorized ChatGPT access.
 
 ## Screenshots
 
