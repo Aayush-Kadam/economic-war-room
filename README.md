@@ -98,7 +98,7 @@ Raw official observations and reconstructed calibration data are retrieved local
 
 See `docs/CLEAN_CLONE_REPRODUCTION.md`, `docs/DATA_LICENSING.md`, `METHODOLOGY.md`, `MODEL_SPECIFICATION.md`, and `LIMITATIONS.md`.
 
-Fast continuous integration runs 81 fixture-backed Python tests, 10 browser/TypeScript parity tests, and the production build without calling official APIs. Three frozen-sample tests require the ignored reconstructed official-data file; those run as part of the full 84-test reconstruction workflow documented in [`docs/CLEAN_CLONE_REPRODUCTION.md`](docs/CLEAN_CLONE_REPRODUCTION.md).
+Fast continuous integration runs 80 fixture-backed Python tests, 10 browser/TypeScript parity tests, and the production build without calling official APIs. Four frozen-sample tests require the ignored reconstructed official-data file; those run as part of the full 84-test reconstruction workflow documented in [`docs/CLEAN_CLONE_REPRODUCTION.md`](docs/CLEAN_CLONE_REPRODUCTION.md).
 
 ## Installation
 

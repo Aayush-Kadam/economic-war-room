@@ -48,4 +48,4 @@ jobs:
         run: pnpm build
 
       - name: Explain full reproducibility boundary
-        run: echo "Fast CI runs 81 fixture-backed Python tests, 10 browser/parity tests, and the production build. The three frozen-sample tests run in the documented full workflow after reconstructing ignored official data."
+        run: echo "Fast CI runs 80 fixture-backed Python tests, 10 browser/parity tests, and the production build. The four frozen-sample tests run in the documented full workflow after reconstructing ignored official data."
