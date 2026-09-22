@@ -8,28 +8,35 @@ Economic War Room is a vintage-aware historical monetary-policy simulation labor
 
 The engine evolves monthly PCE price changes, holds meeting rates until the next listed meeting, and compares the user's policy path with the dated historical baseline through documented literature-calibrated response kernels. Alternative outcomes are model-generated counterfactuals, not observations or causal estimates.
 
-## Scientific status
+## What it is
 
-This is experimental research software—not a calibrated probabilistic forecasting system, structurally identified causal model, optimal-policy calculator, or official Federal Reserve product.
+Economic War Room is an educational and research-preview simulator for examining monetary-policy decisions under historically constrained information. It is designed to make assumptions, timing, data vintages, validation results, and failed experiments inspectable.
 
-- Short- and intermediate-horizon validation of the mean inflation model is encouraging.
-- In the archived 2020–2025 stress evaluation, the core mean model beats the recorded persistence, AR(1), and AR(4) baselines at every reported horizon.
-- In the 2016–2019 test, the core beats those baselines at one, three, and six months, but not at twelve months.
-- Policy transmission is literature-calibrated rather than locally structurally identified.
-- Calibrated predictive intervals are **not claimed**. R11 and R12 uncertainty experiments failed their frozen joint calibration, sharpness, and proper-score gates; the complete negative evidence remains in the repository.
-- The interface's shaded spread is simulation dispersion from stipulated stochastic shocks. It is not a confidence interval or a probability that the economy will fall inside the band.
+## Live demo
 
-The precise V0.9 claims and nonclaims are frozen in `docs/V0_9_SCIENTIFIC_CONTRACT.md`.
+[Open the Economic War Room](https://economic-war-room-aayush.aayushonfleek.chatgpt.site/). The deployment may require access while publication is being finalized.
 
-## Playable scenario
+## Screenshots
 
-- seven FOMC decisions from March through December 2022;
-- historically reconstructed PCE initialization from twelve actual vintage monthly flows at every meeting;
-- headline CPI shown only as a supplementary statistic;
-- hidden historical action until the user's decision is locked;
-- communication stance and policy memo;
-- observed FOMC path separated from the model-generated counterfactual;
-- deterministic seeded simulation and reproducible Governor's Record.
+![Economic War Room interface](public/og.png)
+
+Additional validation figures are preserved in [`reports/figures`](reports/figures/).
+
+## The Fed 2022 scenario
+
+The released scenario covers seven FOMC decisions from March through December 2022. Each briefing respects its decision-date information cutoff, initializes headline PCE inflation from twelve actual vintage monthly price flows, and keeps the historical policy choice hidden until the player commits.
+
+## How decisions work
+
+At each meeting, the player selects a rate action, communication stance, and policy memo. The engine holds the resulting target rate between meetings, advances the economy monthly, and records the path. The historical FOMC decision is then revealed for comparison; it is not treated as proof of an optimal choice.
+
+## Vintage-data design
+
+Scenario packets separate observation periods, release dates, and decision cutoffs. Official-source retrieval, manifests, checksums, transformations, and the exact PCE-flow initialization are documented in [`DATA_SOURCES.md`](DATA_SOURCES.md) and the data pipeline. Revised information is excluded from normal historical play when it was unavailable at the meeting date.
+
+## Economic engine
+
+Python and TypeScript consume the same monthly specification in [`engine/unified_spec.json`](engine/unified_spec.json). Player-minus-historical policy-path deviations feed literature-calibrated distributed-lag kernels for financial conditions, output, unemployment, and inflation. Seeded shocks produce simulation dispersion; the response kernels are not locally identified causal estimates.
 
 ## Validation summary
 
@@ -55,7 +62,19 @@ Full evidence is in `reports/R10_MODEL_SELECTION.md`, `reports/R10_STRESS_TEST.m
 
 These results remain part of the public audit trail.
 
-## Reproduce
+## Scientific status
+
+The supported claims and explicit nonclaims are frozen in [`docs/V0_9_SCIENTIFIC_CONTRACT.md`](docs/V0_9_SCIENTIFIC_CONTRACT.md). V0.9 is a research preview: it is reproducible, evidence-aligned software, but it is not independently research-reviewed or promoted as research-grade.
+
+- Short- and intermediate-horizon validation of the mean inflation model is encouraging.
+- In the archived 2020–2025 stress evaluation, the core mean model beats the recorded persistence, AR(1), and AR(4) baselines at every reported horizon.
+- In the 2016–2019 test, the core beats those baselines at one, three, and six months, but not at twelve months.
+- Policy transmission is literature-calibrated rather than locally structurally identified.
+- Calibrated predictive intervals are **not claimed**. R11 and R12 uncertainty experiments failed their frozen joint calibration, sharpness, and proper-score gates; the complete negative evidence remains in the repository.
+- The interface's shaded spread is simulation dispersion from stipulated stochastic shocks. It is not a confidence interval or a probability that the economy will fall inside the band.
+- The software is not an optimal-policy calculator, causal model, forecasting oracle, or official Federal Reserve product.
+
+## Reproducibility
 
 Requirements: Python 3.11+, Node.js 22.13+, pnpm, and internet access to official FRED/ALFRED endpoints. No API key or developer-local data directory is required.
 
@@ -79,6 +98,39 @@ Raw official observations and reconstructed calibration data are retrieved local
 
 See `docs/CLEAN_CLONE_REPRODUCTION.md`, `docs/DATA_LICENSING.md`, `METHODOLOGY.md`, `MODEL_SPECIFICATION.md`, and `LIMITATIONS.md`.
 
-## License and citation
+Fast continuous integration uses committed fixtures and runs Python tests, browser/TypeScript tests, and the production build without calling official APIs. The full reconstruction workflow is intentionally separate and is documented in [`docs/CLEAN_CLONE_REPRODUCTION.md`](docs/CLEAN_CLONE_REPRODUCTION.md).
 
-Software is released under the MIT License. Third-party data remain subject to their source terms. Citation metadata are provided in `CITATION.cff`.
+## Installation
+
+For a fixture-backed local verification:
+
+```powershell
+pnpm install --frozen-lockfile
+python -m pytest -q
+pnpm test
+pnpm build
+pnpm start
+```
+
+## Data sources
+
+The principal sources are Federal Reserve FOMC calendars and statements, FRED/ALFRED observations, Bureau of Labor Statistics release archives, and Bureau of Economic Analysis PCE data distributed through FRED. See [`DATA_SOURCES.md`](DATA_SOURCES.md) for series-level provenance and [`docs/DATA_LICENSING.md`](docs/DATA_LICENSING.md) for handling rules.
+
+## Limitations
+
+- Twelve-month pre-pandemic mean-model performance trails simple recorded baselines.
+- Monetary-policy transmission is literature-calibrated, not locally structurally identified.
+- R11 and R12 predictive-interval methods failed the frozen release gates.
+- Counterfactual results depend on the simulator's specification and welfare weights.
+- Multi-country scenarios remain experimental and are not part of the V0.9 release contract.
+- External validity is limited, and no independent economist review has yet justified V1.0.
+
+See [`LIMITATIONS.md`](LIMITATIONS.md) for the complete record.
+
+## Citation
+
+Citation metadata are provided in [`CITATION.cff`](CITATION.cff). Please cite the software as “Economic War Room: Monetary Policy Under Fire,” version `0.9.0-research-preview`, by Aayush Kadam.
+
+## Licence
+
+Software is released under the [MIT License](LICENSE). Third-party data remain subject to their source terms.

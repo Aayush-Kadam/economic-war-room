@@ -17,3 +17,5 @@ Release decision: `v0.9.0-research-preview` is authorized at the final R13 audit
 Deployment recommendation: `DEPLOY` the evidence-aligned research preview after the private remote is configured and independently reviewed. This is not authorization for a v1 release.
 
 V1 gate: `CLOSED`. Future work should accumulate genuinely new outcomes and seek independent economist/statistical review rather than tune against the already opened evidence windows.
+
+Finalization phase: started 2026-09-22. Local verification reconfirmed 84 Python tests, 10 browser/TypeScript tests, deterministic parity, and a successful production build. Fast CI, public-release notes, a compact economist review packet, a selective reviewer shortlist, and an unsent outreach draft have been prepared without changing the scientific model or the V0.9 contract. GitHub publication, release publication, visibility, and R13 deployment remain pending external platform completion.
