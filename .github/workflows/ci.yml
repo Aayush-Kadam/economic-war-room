@@ -35,8 +35,11 @@ jobs:
       - name: Install JavaScript dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run Python tests
-        run: python -m pytest -q
+      - name: Run fixture-backed Python tests
+        run: python -m pytest -q --ignore=tests/test_frozen_sample.py
+
+      - name: Verify full-reproduction test remains present
+        run: test -f tests/test_frozen_sample.py && test -f calibration/FROZEN_SAMPLE_MANIFEST.json && test -f calibration/build_frozen_sample.py
 
       - name: Run browser and parity tests
         run: pnpm test
@@ -45,4 +48,4 @@ jobs:
         run: pnpm build
 
       - name: Explain full reproducibility boundary
-        run: echo "Fast CI uses committed fixtures. Official-data reconstruction is documented in docs/CLEAN_CLONE_REPRODUCTION.md and is run separately."
+        run: echo "Fast CI runs 81 fixture-backed Python tests, 10 browser/parity tests, and the production build. The three frozen-sample tests run in the documented full workflow after reconstructing ignored official data."
